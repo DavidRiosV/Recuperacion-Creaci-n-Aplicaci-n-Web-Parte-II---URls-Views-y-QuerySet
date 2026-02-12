@@ -1,2 +1,2 @@
-# Recuperacion-Creaci-n-Aplicaci-n-Web-Parte-II---URls-Views-y-QuerySet
-Recuperacion-Creación Aplicación Web Parte II - URls, Views y QuerySet
+# Recuperaci-n-Aplicaci-n-Web-Parte-I--Inicio-y-Modelos
+Aplicación Web Parte I -Inicio y Modelos (Realizado de nuevo para repasar para las recuperaciones)

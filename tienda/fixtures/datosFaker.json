@@ -1,0 +1,2922 @@
+[
+{
+    "model": "auth.permission",
+    "pk": 1,
+    "fields": {
+        "name": "Can add log entry",
+        "content_type": 1,
+        "codename": "add_logentry"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 2,
+    "fields": {
+        "name": "Can change log entry",
+        "content_type": 1,
+        "codename": "change_logentry"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 3,
+    "fields": {
+        "name": "Can delete log entry",
+        "content_type": 1,
+        "codename": "delete_logentry"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 4,
+    "fields": {
+        "name": "Can view log entry",
+        "content_type": 1,
+        "codename": "view_logentry"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 5,
+    "fields": {
+        "name": "Can add permission",
+        "content_type": 2,
+        "codename": "add_permission"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 6,
+    "fields": {
+        "name": "Can change permission",
+        "content_type": 2,
+        "codename": "change_permission"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 7,
+    "fields": {
+        "name": "Can delete permission",
+        "content_type": 2,
+        "codename": "delete_permission"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 8,
+    "fields": {
+        "name": "Can view permission",
+        "content_type": 2,
+        "codename": "view_permission"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 9,
+    "fields": {
+        "name": "Can add group",
+        "content_type": 3,
+        "codename": "add_group"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 10,
+    "fields": {
+        "name": "Can change group",
+        "content_type": 3,
+        "codename": "change_group"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 11,
+    "fields": {
+        "name": "Can delete group",
+        "content_type": 3,
+        "codename": "delete_group"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 12,
+    "fields": {
+        "name": "Can view group",
+        "content_type": 3,
+        "codename": "view_group"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 13,
+    "fields": {
+        "name": "Can add user",
+        "content_type": 4,
+        "codename": "add_user"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 14,
+    "fields": {
+        "name": "Can change user",
+        "content_type": 4,
+        "codename": "change_user"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 15,
+    "fields": {
+        "name": "Can delete user",
+        "content_type": 4,
+        "codename": "delete_user"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 16,
+    "fields": {
+        "name": "Can view user",
+        "content_type": 4,
+        "codename": "view_user"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 17,
+    "fields": {
+        "name": "Can add content type",
+        "content_type": 5,
+        "codename": "add_contenttype"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 18,
+    "fields": {
+        "name": "Can change content type",
+        "content_type": 5,
+        "codename": "change_contenttype"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 19,
+    "fields": {
+        "name": "Can delete content type",
+        "content_type": 5,
+        "codename": "delete_contenttype"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 20,
+    "fields": {
+        "name": "Can view content type",
+        "content_type": 5,
+        "codename": "view_contenttype"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 21,
+    "fields": {
+        "name": "Can add session",
+        "content_type": 6,
+        "codename": "add_session"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 22,
+    "fields": {
+        "name": "Can change session",
+        "content_type": 6,
+        "codename": "change_session"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 23,
+    "fields": {
+        "name": "Can delete session",
+        "content_type": 6,
+        "codename": "delete_session"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 24,
+    "fields": {
+        "name": "Can view session",
+        "content_type": 6,
+        "codename": "view_session"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 25,
+    "fields": {
+        "name": "Can add descuento",
+        "content_type": 7,
+        "codename": "add_descuento"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 26,
+    "fields": {
+        "name": "Can change descuento",
+        "content_type": 7,
+        "codename": "change_descuento"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 27,
+    "fields": {
+        "name": "Can delete descuento",
+        "content_type": 7,
+        "codename": "delete_descuento"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 28,
+    "fields": {
+        "name": "Can view descuento",
+        "content_type": 7,
+        "codename": "view_descuento"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 29,
+    "fields": {
+        "name": "Can add marca",
+        "content_type": 8,
+        "codename": "add_marca"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 30,
+    "fields": {
+        "name": "Can change marca",
+        "content_type": 8,
+        "codename": "change_marca"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 31,
+    "fields": {
+        "name": "Can delete marca",
+        "content_type": 8,
+        "codename": "delete_marca"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 32,
+    "fields": {
+        "name": "Can view marca",
+        "content_type": 8,
+        "codename": "view_marca"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 33,
+    "fields": {
+        "name": "Can add pedido",
+        "content_type": 9,
+        "codename": "add_pedido"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 34,
+    "fields": {
+        "name": "Can change pedido",
+        "content_type": 9,
+        "codename": "change_pedido"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 35,
+    "fields": {
+        "name": "Can delete pedido",
+        "content_type": 9,
+        "codename": "delete_pedido"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 36,
+    "fields": {
+        "name": "Can view pedido",
+        "content_type": 9,
+        "codename": "view_pedido"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 37,
+    "fields": {
+        "name": "Can add usuario",
+        "content_type": 10,
+        "codename": "add_usuario"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 38,
+    "fields": {
+        "name": "Can change usuario",
+        "content_type": 10,
+        "codename": "change_usuario"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 39,
+    "fields": {
+        "name": "Can delete usuario",
+        "content_type": 10,
+        "codename": "delete_usuario"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 40,
+    "fields": {
+        "name": "Can view usuario",
+        "content_type": 10,
+        "codename": "view_usuario"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 41,
+    "fields": {
+        "name": "Can add detalle_ pedido",
+        "content_type": 11,
+        "codename": "add_detalle_pedido"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 42,
+    "fields": {
+        "name": "Can change detalle_ pedido",
+        "content_type": 11,
+        "codename": "change_detalle_pedido"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 43,
+    "fields": {
+        "name": "Can delete detalle_ pedido",
+        "content_type": 11,
+        "codename": "delete_detalle_pedido"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 44,
+    "fields": {
+        "name": "Can view detalle_ pedido",
+        "content_type": 11,
+        "codename": "view_detalle_pedido"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 45,
+    "fields": {
+        "name": "Can add prenda",
+        "content_type": 12,
+        "codename": "add_prenda"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 46,
+    "fields": {
+        "name": "Can change prenda",
+        "content_type": 12,
+        "codename": "change_prenda"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 47,
+    "fields": {
+        "name": "Can delete prenda",
+        "content_type": 12,
+        "codename": "delete_prenda"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 48,
+    "fields": {
+        "name": "Can view prenda",
+        "content_type": 12,
+        "codename": "view_prenda"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 49,
+    "fields": {
+        "name": "Can add inventario",
+        "content_type": 13,
+        "codename": "add_inventario"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 50,
+    "fields": {
+        "name": "Can change inventario",
+        "content_type": 13,
+        "codename": "change_inventario"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 51,
+    "fields": {
+        "name": "Can delete inventario",
+        "content_type": 13,
+        "codename": "delete_inventario"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 52,
+    "fields": {
+        "name": "Can view inventario",
+        "content_type": 13,
+        "codename": "view_inventario"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 53,
+    "fields": {
+        "name": "Can add perfil_ usuario",
+        "content_type": 14,
+        "codename": "add_perfil_usuario"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 54,
+    "fields": {
+        "name": "Can change perfil_ usuario",
+        "content_type": 14,
+        "codename": "change_perfil_usuario"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 55,
+    "fields": {
+        "name": "Can delete perfil_ usuario",
+        "content_type": 14,
+        "codename": "delete_perfil_usuario"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 56,
+    "fields": {
+        "name": "Can view perfil_ usuario",
+        "content_type": 14,
+        "codename": "view_perfil_usuario"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 57,
+    "fields": {
+        "name": "Can add opinion",
+        "content_type": 15,
+        "codename": "add_opinion"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 58,
+    "fields": {
+        "name": "Can change opinion",
+        "content_type": 15,
+        "codename": "change_opinion"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 59,
+    "fields": {
+        "name": "Can delete opinion",
+        "content_type": 15,
+        "codename": "delete_opinion"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 60,
+    "fields": {
+        "name": "Can view opinion",
+        "content_type": 15,
+        "codename": "view_opinion"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 61,
+    "fields": {
+        "name": "Can add cesta",
+        "content_type": 16,
+        "codename": "add_cesta"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 62,
+    "fields": {
+        "name": "Can change cesta",
+        "content_type": 16,
+        "codename": "change_cesta"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 63,
+    "fields": {
+        "name": "Can delete cesta",
+        "content_type": 16,
+        "codename": "delete_cesta"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 64,
+    "fields": {
+        "name": "Can view cesta",
+        "content_type": 16,
+        "codename": "view_cesta"
+    }
+},
+{
+    "model": "contenttypes.contenttype",
+    "pk": 1,
+    "fields": {
+        "app_label": "admin",
+        "model": "logentry"
+    }
+},
+{
+    "model": "contenttypes.contenttype",
+    "pk": 2,
+    "fields": {
+        "app_label": "auth",
+        "model": "permission"
+    }
+},
+{
+    "model": "contenttypes.contenttype",
+    "pk": 3,
+    "fields": {
+        "app_label": "auth",
+        "model": "group"
+    }
+},
+{
+    "model": "contenttypes.contenttype",
+    "pk": 4,
+    "fields": {
+        "app_label": "auth",
+        "model": "user"
+    }
+},
+{
+    "model": "contenttypes.contenttype",
+    "pk": 5,
+    "fields": {
+        "app_label": "contenttypes",
+        "model": "contenttype"
+    }
+},
+{
+    "model": "contenttypes.contenttype",
+    "pk": 6,
+    "fields": {
+        "app_label": "sessions",
+        "model": "session"
+    }
+},
+{
+    "model": "contenttypes.contenttype",
+    "pk": 7,
+    "fields": {
+        "app_label": "tienda",
+        "model": "descuento"
+    }
+},
+{
+    "model": "contenttypes.contenttype",
+    "pk": 8,
+    "fields": {
+        "app_label": "tienda",
+        "model": "marca"
+    }
+},
+{
+    "model": "contenttypes.contenttype",
+    "pk": 9,
+    "fields": {
+        "app_label": "tienda",
+        "model": "pedido"
+    }
+},
+{
+    "model": "contenttypes.contenttype",
+    "pk": 10,
+    "fields": {
+        "app_label": "tienda",
+        "model": "usuario"
+    }
+},
+{
+    "model": "contenttypes.contenttype",
+    "pk": 11,
+    "fields": {
+        "app_label": "tienda",
+        "model": "detalle_pedido"
+    }
+},
+{
+    "model": "contenttypes.contenttype",
+    "pk": 12,
+    "fields": {
+        "app_label": "tienda",
+        "model": "prenda"
+    }
+},
+{
+    "model": "contenttypes.contenttype",
+    "pk": 13,
+    "fields": {
+        "app_label": "tienda",
+        "model": "inventario"
+    }
+},
+{
+    "model": "contenttypes.contenttype",
+    "pk": 14,
+    "fields": {
+        "app_label": "tienda",
+        "model": "perfil_usuario"
+    }
+},
+{
+    "model": "contenttypes.contenttype",
+    "pk": 15,
+    "fields": {
+        "app_label": "tienda",
+        "model": "opinion"
+    }
+},
+{
+    "model": "contenttypes.contenttype",
+    "pk": 16,
+    "fields": {
+        "app_label": "tienda",
+        "model": "cesta"
+    }
+},
+{
+    "model": "tienda.usuario",
+    "pk": 1,
+    "fields": {
+        "nombre": "Dennis",
+        "correo_electronico": "chapmanbenjamin@example.com",
+        "contraseña": "!gHrFwg5!8",
+        "fecha_registro": "2026-02-12T13:39:24.065"
+    }
+},
+{
+    "model": "tienda.usuario",
+    "pk": 2,
+    "fields": {
+        "nombre": "Joshua",
+        "correo_electronico": "scottfisher@example.com",
+        "contraseña": "_czhcQQg6y",
+        "fecha_registro": "2026-02-12T13:39:24.080"
+    }
+},
+{
+    "model": "tienda.usuario",
+    "pk": 3,
+    "fields": {
+        "nombre": "Margaret",
+        "correo_electronico": "martin12@example.org",
+        "contraseña": "a+7OrLQysR",
+        "fecha_registro": "2026-02-12T13:39:24.095"
+    }
+},
+{
+    "model": "tienda.usuario",
+    "pk": 4,
+    "fields": {
+        "nombre": "Michelle",
+        "correo_electronico": "rwilliams@example.org",
+        "contraseña": "6GgZg8q8@4",
+        "fecha_registro": "2026-02-12T13:39:24.110"
+    }
+},
+{
+    "model": "tienda.usuario",
+    "pk": 5,
+    "fields": {
+        "nombre": "Micheal",
+        "correo_electronico": "raymond97@example.com",
+        "contraseña": "+g7NzRcXlL",
+        "fecha_registro": "2026-02-12T13:39:24.125"
+    }
+},
+{
+    "model": "tienda.usuario",
+    "pk": 6,
+    "fields": {
+        "nombre": "James",
+        "correo_electronico": "owolfe@example.com",
+        "contraseña": "(97$HhTo+T",
+        "fecha_registro": "2026-02-12T13:39:24.141"
+    }
+},
+{
+    "model": "tienda.usuario",
+    "pk": 7,
+    "fields": {
+        "nombre": "Matthew",
+        "correo_electronico": "michael41@example.com",
+        "contraseña": "I#WgE5JLGm",
+        "fecha_registro": "2026-02-12T13:39:24.156"
+    }
+},
+{
+    "model": "tienda.usuario",
+    "pk": 8,
+    "fields": {
+        "nombre": "Joshua",
+        "correo_electronico": "hking@example.com",
+        "contraseña": "*e4AbqGD_m",
+        "fecha_registro": "2026-02-12T13:39:24.170"
+    }
+},
+{
+    "model": "tienda.usuario",
+    "pk": 9,
+    "fields": {
+        "nombre": "Laura",
+        "correo_electronico": "tara13@example.org",
+        "contraseña": ")4AH3wNn@r",
+        "fecha_registro": "2026-02-12T13:39:24.184"
+    }
+},
+{
+    "model": "tienda.usuario",
+    "pk": 10,
+    "fields": {
+        "nombre": "Dustin",
+        "correo_electronico": "baileylisa@example.net",
+        "contraseña": "w1Y5Oc17^o",
+        "fecha_registro": "2026-02-12T13:39:24.200"
+    }
+},
+{
+    "model": "tienda.perfil_usuario",
+    "pk": 1,
+    "fields": {
+        "usuario": 1,
+        "nombre_usuario": "psmith",
+        "biografia": "Election purpose ask pull.",
+        "telefono": "520142880",
+        "direccion": "2961 Matthew Locks\nChristophertown, AZ 54221"
+    }
+},
+{
+    "model": "tienda.perfil_usuario",
+    "pk": 2,
+    "fields": {
+        "usuario": 2,
+        "nombre_usuario": "rachael91",
+        "biografia": "Us every strong pattern draw. Firm under scientist full.\nAgency majority cost majority.",
+        "telefono": "912941359",
+        "direccion": "0427 Frances Summit Suite 741\nPort Jeremyfort, FL 31421"
+    }
+},
+{
+    "model": "tienda.perfil_usuario",
+    "pk": 3,
+    "fields": {
+        "usuario": 3,
+        "nombre_usuario": "frankfloyd",
+        "biografia": "Organization white son.",
+        "telefono": "321441907",
+        "direccion": "13193 Walker Square Apt. 014\nParkerborough, OK 61602"
+    }
+},
+{
+    "model": "tienda.perfil_usuario",
+    "pk": 4,
+    "fields": {
+        "usuario": 4,
+        "nombre_usuario": "elizabethrichardson",
+        "biografia": "Increase organization lay. I food identify single yet wife president.",
+        "telefono": "109616052",
+        "direccion": "970 Tracy Mountain Apt. 184\nPort Rachel, MA 50712"
+    }
+},
+{
+    "model": "tienda.perfil_usuario",
+    "pk": 5,
+    "fields": {
+        "usuario": 5,
+        "nombre_usuario": "coletimothy",
+        "biografia": "Pressure require message kitchen above as. And TV mother available yeah.",
+        "telefono": "361074338",
+        "direccion": "90920 Rachel Place\nDodsonfurt, WA 71280"
+    }
+},
+{
+    "model": "tienda.perfil_usuario",
+    "pk": 6,
+    "fields": {
+        "usuario": 6,
+        "nombre_usuario": "frobinson",
+        "biografia": "Yard senior happen sell. International physical next difficult. Because image move.",
+        "telefono": "339306939",
+        "direccion": "8026 Hudson Freeway Apt. 762\nSouth Lawrencehaven, ND 54706"
+    }
+},
+{
+    "model": "tienda.perfil_usuario",
+    "pk": 7,
+    "fields": {
+        "usuario": 7,
+        "nombre_usuario": "kyle22",
+        "biografia": "Activity pick front. Center focus debate other health capital.",
+        "telefono": "608562985",
+        "direccion": "74528 Andrew Station\nJosephshire, MD 49020"
+    }
+},
+{
+    "model": "tienda.perfil_usuario",
+    "pk": 8,
+    "fields": {
+        "usuario": 8,
+        "nombre_usuario": "jessica79",
+        "biografia": "None game before money old campaign. Long ago thus edge light.",
+        "telefono": "144807304",
+        "direccion": "00464 Toni Stravenue\nPort Bryanbury, MP 18221"
+    }
+},
+{
+    "model": "tienda.perfil_usuario",
+    "pk": 9,
+    "fields": {
+        "usuario": 9,
+        "nombre_usuario": "michaelmendoza",
+        "biografia": "Any only remain still score. Southern yet rate. Thus involve coach provide.",
+        "telefono": "356942129",
+        "direccion": "5171 Dana Cliff\nJohnsonport, CT 94781"
+    }
+},
+{
+    "model": "tienda.perfil_usuario",
+    "pk": 10,
+    "fields": {
+        "usuario": 10,
+        "nombre_usuario": "annetteparker",
+        "biografia": "If road garden road. Sit box policy run.\nEvery pass money eat only. Rather bad theory oil.",
+        "telefono": "431820130",
+        "direccion": "283 Gibson Haven\nRichardbury, MA 24825"
+    }
+},
+{
+    "model": "tienda.marca",
+    "pk": 1,
+    "fields": {
+        "nombre": "Colon and Sons",
+        "pais_origen": "El Salvador",
+        "descripcion": "Person approach nearly. Shoulder grow land turn effort. Focus responsibility reason dinner.",
+        "año_fundacion": 1991
+    }
+},
+{
+    "model": "tienda.marca",
+    "pk": 2,
+    "fields": {
+        "nombre": "Garner-Martinez",
+        "pais_origen": "Tuvalu",
+        "descripcion": "Front left painting current few friend difference. Hold forget behind attack far.",
+        "año_fundacion": 1996
+    }
+},
+{
+    "model": "tienda.marca",
+    "pk": 3,
+    "fields": {
+        "nombre": "Cox-Cox",
+        "pais_origen": "Indonesia",
+        "descripcion": "Social real might central. Letter he dog red water effort myself. Husband market which something.",
+        "año_fundacion": 2008
+    }
+},
+{
+    "model": "tienda.marca",
+    "pk": 4,
+    "fields": {
+        "nombre": "Evans-Garcia",
+        "pais_origen": "Saint Barthelemy",
+        "descripcion": "Baby deep charge final service from work.\nHeavy future put. Record range line leg evidence.",
+        "año_fundacion": 2021
+    }
+},
+{
+    "model": "tienda.marca",
+    "pk": 5,
+    "fields": {
+        "nombre": "Rodriguez Group",
+        "pais_origen": "North Macedonia",
+        "descripcion": "Commercial consumer decide. Along head marriage should culture claim.",
+        "año_fundacion": 1991
+    }
+},
+{
+    "model": "tienda.descuento",
+    "pk": 1,
+    "fields": {
+        "codigo": "DESC825",
+        "porcentaje": "29.00",
+        "activo": true,
+        "fecha_expiracion": "2026-02-14"
+    }
+},
+{
+    "model": "tienda.descuento",
+    "pk": 2,
+    "fields": {
+        "codigo": "DESC296",
+        "porcentaje": "11.00",
+        "activo": true,
+        "fecha_expiracion": "2026-02-21"
+    }
+},
+{
+    "model": "tienda.descuento",
+    "pk": 3,
+    "fields": {
+        "codigo": "DESC101",
+        "porcentaje": "44.00",
+        "activo": true,
+        "fecha_expiracion": "2026-02-18"
+    }
+},
+{
+    "model": "tienda.descuento",
+    "pk": 4,
+    "fields": {
+        "codigo": "DESC989",
+        "porcentaje": "14.00",
+        "activo": true,
+        "fecha_expiracion": "2026-02-23"
+    }
+},
+{
+    "model": "tienda.descuento",
+    "pk": 5,
+    "fields": {
+        "codigo": "DESC191",
+        "porcentaje": "36.00",
+        "activo": true,
+        "fecha_expiracion": "2026-02-19"
+    }
+},
+{
+    "model": "tienda.prenda",
+    "pk": 1,
+    "fields": {
+        "marca": 3,
+        "nombre": "Position",
+        "descripcion": "Table final name continue decide show. Positive color quality pressure he.",
+        "precio": "24.19",
+        "talla": "S",
+        "descuentos": [
+            2
+        ]
+    }
+},
+{
+    "model": "tienda.prenda",
+    "pk": 2,
+    "fields": {
+        "marca": 3,
+        "nombre": "Owner",
+        "descripcion": "Present evening nice go western form save. Strategy agreement professional full major miss expect.",
+        "precio": "40.54",
+        "talla": "L",
+        "descuentos": [
+            2
+        ]
+    }
+},
+{
+    "model": "tienda.prenda",
+    "pk": 3,
+    "fields": {
+        "marca": 2,
+        "nombre": "Teacher",
+        "descripcion": "Guy while perform kind whose design six. Something issue baby rest tell.",
+        "precio": "149.34",
+        "talla": "S",
+        "descuentos": []
+    }
+},
+{
+    "model": "tienda.prenda",
+    "pk": 4,
+    "fields": {
+        "marca": 2,
+        "nombre": "Start",
+        "descripcion": "Seat some yard front difficult parent move. Family education likely image. Stage commercial discussion. Four pattern long medical who offer.",
+        "precio": "60.32",
+        "talla": "XL",
+        "descuentos": [
+            1
+        ]
+    }
+},
+{
+    "model": "tienda.prenda",
+    "pk": 5,
+    "fields": {
+        "marca": 3,
+        "nombre": "Kitchen",
+        "descripcion": "Ready sing run produce speak. Song realize keep security born before choice.",
+        "precio": "103.63",
+        "talla": "XS",
+        "descuentos": [
+            4,
+            5
+        ]
+    }
+},
+{
+    "model": "tienda.prenda",
+    "pk": 6,
+    "fields": {
+        "marca": 5,
+        "nombre": "Central",
+        "descripcion": "Conference yes work everything my past first. Cover home law coach these task. Various purpose could.",
+        "precio": "49.03",
+        "talla": "XL",
+        "descuentos": [
+            1,
+            2
+        ]
+    }
+},
+{
+    "model": "tienda.prenda",
+    "pk": 7,
+    "fields": {
+        "marca": 2,
+        "nombre": "Either",
+        "descripcion": "Industry lose stock green organization. Pull lay along.\nHard always finally. Administration rest reason manager. Series establish father hold.",
+        "precio": "38.96",
+        "talla": "L",
+        "descuentos": [
+            4
+        ]
+    }
+},
+{
+    "model": "tienda.prenda",
+    "pk": 8,
+    "fields": {
+        "marca": 4,
+        "nombre": "Figure",
+        "descripcion": "Lot or easy you policy oil. Hold real approach serious consider.\nLaw crime position continue heart. Up require campaign full. Leave fund hour.",
+        "precio": "36.35",
+        "talla": "M",
+        "descuentos": [
+            2,
+            5
+        ]
+    }
+},
+{
+    "model": "tienda.prenda",
+    "pk": 9,
+    "fields": {
+        "marca": 2,
+        "nombre": "Per",
+        "descripcion": "Note company finish want cold lead relate. Discussion bit trade goal official resource fund.",
+        "precio": "78.83",
+        "talla": "M",
+        "descuentos": [
+            1,
+            4
+        ]
+    }
+},
+{
+    "model": "tienda.prenda",
+    "pk": 10,
+    "fields": {
+        "marca": 3,
+        "nombre": "Manager",
+        "descripcion": "Somebody despite example season blood present charge. Prove cause series song shake.",
+        "precio": "145.14",
+        "talla": "XL",
+        "descuentos": [
+            2,
+            4
+        ]
+    }
+},
+{
+    "model": "tienda.prenda",
+    "pk": 11,
+    "fields": {
+        "marca": 2,
+        "nombre": "Represent",
+        "descripcion": "Benefit American mind. Company say significant.",
+        "precio": "65.03",
+        "talla": "XL",
+        "descuentos": [
+            3,
+            5
+        ]
+    }
+},
+{
+    "model": "tienda.prenda",
+    "pk": 12,
+    "fields": {
+        "marca": 5,
+        "nombre": "Try",
+        "descripcion": "Onto if successful painting line look outside. Section reach born line another care. Traditional suddenly wonder.",
+        "precio": "31.86",
+        "talla": "XS",
+        "descuentos": [
+            4,
+            5
+        ]
+    }
+},
+{
+    "model": "tienda.prenda",
+    "pk": 13,
+    "fields": {
+        "marca": 4,
+        "nombre": "Role",
+        "descripcion": "Act ask TV health artist fact. Skill quality much grow subject. Executive film wonder statement development.",
+        "precio": "69.70",
+        "talla": "L",
+        "descuentos": []
+    }
+},
+{
+    "model": "tienda.prenda",
+    "pk": 14,
+    "fields": {
+        "marca": 3,
+        "nombre": "Structure",
+        "descripcion": "Rule box beyond later. Student probably notice sport foot effect.",
+        "precio": "20.49",
+        "talla": "XL",
+        "descuentos": []
+    }
+},
+{
+    "model": "tienda.prenda",
+    "pk": 15,
+    "fields": {
+        "marca": 4,
+        "nombre": "Real",
+        "descripcion": "Western require worker development owner support. Once pass husband store audience others serve. Without account Congress source suggest onto.",
+        "precio": "148.43",
+        "talla": "M",
+        "descuentos": [
+            2,
+            4
+        ]
+    }
+},
+{
+    "model": "tienda.prenda",
+    "pk": 16,
+    "fields": {
+        "marca": 2,
+        "nombre": "Figure",
+        "descripcion": "Article when prove ball get hundred nothing decision. Economic only end matter child. Tv lose street.",
+        "precio": "148.50",
+        "talla": "XS",
+        "descuentos": [
+            4
+        ]
+    }
+},
+{
+    "model": "tienda.prenda",
+    "pk": 17,
+    "fields": {
+        "marca": 3,
+        "nombre": "Down",
+        "descripcion": "Issue after especially real kind population affect. Term plant least build term might call top. Anything carry agreement by room wish seek learn.",
+        "precio": "130.18",
+        "talla": "S",
+        "descuentos": [
+            1,
+            3
+        ]
+    }
+},
+{
+    "model": "tienda.prenda",
+    "pk": 18,
+    "fields": {
+        "marca": 4,
+        "nombre": "Heart",
+        "descripcion": "Condition though almost back. Region product city thousand address fall. Set total song method ground. Inside fact garden side physical rock same.",
+        "precio": "98.68",
+        "talla": "L",
+        "descuentos": [
+            1
+        ]
+    }
+},
+{
+    "model": "tienda.prenda",
+    "pk": 19,
+    "fields": {
+        "marca": 2,
+        "nombre": "Experience",
+        "descripcion": "Us boy only give commercial. Film top war friend special local leader bring.",
+        "precio": "136.92",
+        "talla": "XL",
+        "descuentos": [
+            2
+        ]
+    }
+},
+{
+    "model": "tienda.prenda",
+    "pk": 20,
+    "fields": {
+        "marca": 3,
+        "nombre": "Often",
+        "descripcion": "One as main story science. Language bar word audience. Democratic improve everyone even protect. Budget partner ten serious behind.",
+        "precio": "73.39",
+        "talla": "M",
+        "descuentos": [
+            1,
+            5
+        ]
+    }
+},
+{
+    "model": "tienda.cesta",
+    "pk": 1,
+    "fields": {
+        "usuario": 1,
+        "fecha_creacion": "2026-02-12T13:39:24.071",
+        "activo": true,
+        "objetos_en_cesta": 1,
+        "total": 130.18,
+        "prendas": [
+            17
+        ]
+    }
+},
+{
+    "model": "tienda.cesta",
+    "pk": 2,
+    "fields": {
+        "usuario": 2,
+        "fecha_creacion": "2026-02-12T13:39:24.086",
+        "activo": true,
+        "objetos_en_cesta": 2,
+        "total": 195.21,
+        "prendas": [
+            11,
+            17
+        ]
+    }
+},
+{
+    "model": "tienda.cesta",
+    "pk": 3,
+    "fields": {
+        "usuario": 3,
+        "fecha_creacion": "2026-02-12T13:39:24.100",
+        "activo": true,
+        "objetos_en_cesta": 5,
+        "total": 269.85999999999996,
+        "prendas": [
+            1,
+            2,
+            8,
+            12,
+            19
+        ]
+    }
+},
+{
+    "model": "tienda.cesta",
+    "pk": 4,
+    "fields": {
+        "usuario": 4,
+        "fecha_creacion": "2026-02-12T13:39:24.117",
+        "activo": true,
+        "objetos_en_cesta": 4,
+        "total": 259.52,
+        "prendas": [
+            1,
+            10,
+            13,
+            14
+        ]
+    }
+},
+{
+    "model": "tienda.cesta",
+    "pk": 5,
+    "fields": {
+        "usuario": 5,
+        "fecha_creacion": "2026-02-12T13:39:24.132",
+        "activo": true,
+        "objetos_en_cesta": 2,
+        "total": 172.07,
+        "prendas": [
+            18,
+            20
+        ]
+    }
+},
+{
+    "model": "tienda.cesta",
+    "pk": 6,
+    "fields": {
+        "usuario": 6,
+        "fecha_creacion": "2026-02-12T13:39:24.146",
+        "activo": true,
+        "objetos_en_cesta": 1,
+        "total": 40.54,
+        "prendas": [
+            2
+        ]
+    }
+},
+{
+    "model": "tienda.cesta",
+    "pk": 7,
+    "fields": {
+        "usuario": 7,
+        "fecha_creacion": "2026-02-12T13:39:24.161",
+        "activo": true,
+        "objetos_en_cesta": 4,
+        "total": 210.04000000000002,
+        "prendas": [
+            2,
+            7,
+            12,
+            18
+        ]
+    }
+},
+{
+    "model": "tienda.cesta",
+    "pk": 8,
+    "fields": {
+        "usuario": 8,
+        "fecha_creacion": "2026-02-12T13:39:24.176",
+        "activo": true,
+        "objetos_en_cesta": 5,
+        "total": 558.49,
+        "prendas": [
+            3,
+            12,
+            15,
+            17,
+            18
+        ]
+    }
+},
+{
+    "model": "tienda.cesta",
+    "pk": 9,
+    "fields": {
+        "usuario": 9,
+        "fecha_creacion": "2026-02-12T13:39:24.191",
+        "activo": true,
+        "objetos_en_cesta": 2,
+        "total": 285.35,
+        "prendas": [
+            15,
+            19
+        ]
+    }
+},
+{
+    "model": "tienda.cesta",
+    "pk": 10,
+    "fields": {
+        "usuario": 10,
+        "fecha_creacion": "2026-02-12T13:39:24.206",
+        "activo": true,
+        "objetos_en_cesta": 5,
+        "total": 308.65000000000003,
+        "prendas": [
+            4,
+            7,
+            9,
+            12,
+            18
+        ]
+    }
+},
+{
+    "model": "tienda.inventario",
+    "pk": 1,
+    "fields": {
+        "prenda": 1,
+        "cantidad_disponible": 100,
+        "ubicacion_almacen": "Daviston",
+        "stock_minimo": 5,
+        "stock_maximo": 200
+    }
+},
+{
+    "model": "tienda.inventario",
+    "pk": 2,
+    "fields": {
+        "prenda": 2,
+        "cantidad_disponible": 40,
+        "ubicacion_almacen": "Lake Markmouth",
+        "stock_minimo": 5,
+        "stock_maximo": 200
+    }
+},
+{
+    "model": "tienda.inventario",
+    "pk": 3,
+    "fields": {
+        "prenda": 3,
+        "cantidad_disponible": 4,
+        "ubicacion_almacen": "Port Margaret",
+        "stock_minimo": 5,
+        "stock_maximo": 200
+    }
+},
+{
+    "model": "tienda.inventario",
+    "pk": 4,
+    "fields": {
+        "prenda": 4,
+        "cantidad_disponible": 43,
+        "ubicacion_almacen": "East Kelsey",
+        "stock_minimo": 5,
+        "stock_maximo": 200
+    }
+},
+{
+    "model": "tienda.inventario",
+    "pk": 5,
+    "fields": {
+        "prenda": 5,
+        "cantidad_disponible": 76,
+        "ubicacion_almacen": "Melissaland",
+        "stock_minimo": 5,
+        "stock_maximo": 200
+    }
+},
+{
+    "model": "tienda.inventario",
+    "pk": 6,
+    "fields": {
+        "prenda": 6,
+        "cantidad_disponible": 69,
+        "ubicacion_almacen": "Jillfort",
+        "stock_minimo": 5,
+        "stock_maximo": 200
+    }
+},
+{
+    "model": "tienda.inventario",
+    "pk": 7,
+    "fields": {
+        "prenda": 7,
+        "cantidad_disponible": 54,
+        "ubicacion_almacen": "Turnerton",
+        "stock_minimo": 5,
+        "stock_maximo": 200
+    }
+},
+{
+    "model": "tienda.inventario",
+    "pk": 8,
+    "fields": {
+        "prenda": 8,
+        "cantidad_disponible": 84,
+        "ubicacion_almacen": "Stevenside",
+        "stock_minimo": 5,
+        "stock_maximo": 200
+    }
+},
+{
+    "model": "tienda.inventario",
+    "pk": 9,
+    "fields": {
+        "prenda": 9,
+        "cantidad_disponible": 99,
+        "ubicacion_almacen": "Port Elizabeth",
+        "stock_minimo": 5,
+        "stock_maximo": 200
+    }
+},
+{
+    "model": "tienda.inventario",
+    "pk": 10,
+    "fields": {
+        "prenda": 10,
+        "cantidad_disponible": 11,
+        "ubicacion_almacen": "Lauramouth",
+        "stock_minimo": 5,
+        "stock_maximo": 200
+    }
+},
+{
+    "model": "tienda.inventario",
+    "pk": 11,
+    "fields": {
+        "prenda": 11,
+        "cantidad_disponible": 24,
+        "ubicacion_almacen": "Janiceview",
+        "stock_minimo": 5,
+        "stock_maximo": 200
+    }
+},
+{
+    "model": "tienda.inventario",
+    "pk": 12,
+    "fields": {
+        "prenda": 12,
+        "cantidad_disponible": 96,
+        "ubicacion_almacen": "Johnchester",
+        "stock_minimo": 5,
+        "stock_maximo": 200
+    }
+},
+{
+    "model": "tienda.inventario",
+    "pk": 13,
+    "fields": {
+        "prenda": 13,
+        "cantidad_disponible": 32,
+        "ubicacion_almacen": "New Laurie",
+        "stock_minimo": 5,
+        "stock_maximo": 200
+    }
+},
+{
+    "model": "tienda.inventario",
+    "pk": 14,
+    "fields": {
+        "prenda": 14,
+        "cantidad_disponible": 56,
+        "ubicacion_almacen": "Sonyaside",
+        "stock_minimo": 5,
+        "stock_maximo": 200
+    }
+},
+{
+    "model": "tienda.inventario",
+    "pk": 15,
+    "fields": {
+        "prenda": 15,
+        "cantidad_disponible": 73,
+        "ubicacion_almacen": "Villarrealside",
+        "stock_minimo": 5,
+        "stock_maximo": 200
+    }
+},
+{
+    "model": "tienda.inventario",
+    "pk": 16,
+    "fields": {
+        "prenda": 16,
+        "cantidad_disponible": 90,
+        "ubicacion_almacen": "West Anthonyborough",
+        "stock_minimo": 5,
+        "stock_maximo": 200
+    }
+},
+{
+    "model": "tienda.inventario",
+    "pk": 17,
+    "fields": {
+        "prenda": 17,
+        "cantidad_disponible": 51,
+        "ubicacion_almacen": "West Alicia",
+        "stock_minimo": 5,
+        "stock_maximo": 200
+    }
+},
+{
+    "model": "tienda.inventario",
+    "pk": 18,
+    "fields": {
+        "prenda": 18,
+        "cantidad_disponible": 30,
+        "ubicacion_almacen": "New Samuelhaven",
+        "stock_minimo": 5,
+        "stock_maximo": 200
+    }
+},
+{
+    "model": "tienda.inventario",
+    "pk": 19,
+    "fields": {
+        "prenda": 19,
+        "cantidad_disponible": 47,
+        "ubicacion_almacen": "Murphyton",
+        "stock_minimo": 5,
+        "stock_maximo": 200
+    }
+},
+{
+    "model": "tienda.inventario",
+    "pk": 20,
+    "fields": {
+        "prenda": 20,
+        "cantidad_disponible": 87,
+        "ubicacion_almacen": "Pennyfort",
+        "stock_minimo": 5,
+        "stock_maximo": 200
+    }
+},
+{
+    "model": "tienda.pedido",
+    "pk": 1,
+    "fields": {
+        "usuario": 1,
+        "fecha": "2026-02-12T13:39:24.215",
+        "total": "663.99",
+        "estado": "PROC",
+        "direccion_envio": "369 Eric Prairie Suite 317\nCaldwellhaven, MI 73790"
+    }
+},
+{
+    "model": "tienda.pedido",
+    "pk": 2,
+    "fields": {
+        "usuario": 1,
+        "fecha": "2026-02-12T13:39:24.230",
+        "total": "619.88",
+        "estado": "ENT",
+        "direccion_envio": "5420 Kenneth Field\nPort Danieltown, OR 12548"
+    }
+},
+{
+    "model": "tienda.pedido",
+    "pk": 3,
+    "fields": {
+        "usuario": 1,
+        "fecha": "2026-02-12T13:39:24.244",
+        "total": "426.85",
+        "estado": "ENV",
+        "direccion_envio": "PSC 0579, Box 4215\nAPO AA 14544"
+    }
+},
+{
+    "model": "tienda.pedido",
+    "pk": 4,
+    "fields": {
+        "usuario": 2,
+        "fecha": "2026-02-12T13:39:24.259",
+        "total": "476.10",
+        "estado": "ENV",
+        "direccion_envio": "9516 Bennett Islands Apt. 934\nSamanthaburgh, CA 91768"
+    }
+},
+{
+    "model": "tienda.pedido",
+    "pk": 5,
+    "fields": {
+        "usuario": 2,
+        "fecha": "2026-02-12T13:39:24.275",
+        "total": "737.21",
+        "estado": "ENT",
+        "direccion_envio": "7645 Kirby Radial\nLopezbury, KY 13293"
+    }
+},
+{
+    "model": "tienda.pedido",
+    "pk": 6,
+    "fields": {
+        "usuario": 3,
+        "fecha": "2026-02-12T13:39:24.288",
+        "total": "40.54",
+        "estado": "PROC",
+        "direccion_envio": "040 Boyd Stream Apt. 451\nNorth Kristina, MP 46650"
+    }
+},
+{
+    "model": "tienda.pedido",
+    "pk": 7,
+    "fields": {
+        "usuario": 4,
+        "fecha": "2026-02-12T13:39:24.296",
+        "total": "947.47",
+        "estado": "ENT",
+        "direccion_envio": "3237 Rodriguez Springs\nSouth Carlosport, ID 19064"
+    }
+},
+{
+    "model": "tienda.pedido",
+    "pk": 8,
+    "fields": {
+        "usuario": 4,
+        "fecha": "2026-02-12T13:39:24.312",
+        "total": "234.77",
+        "estado": "PEND",
+        "direccion_envio": "940 Schroeder River Apt. 762\nBernardtown, ID 27160"
+    }
+},
+{
+    "model": "tienda.pedido",
+    "pk": 9,
+    "fields": {
+        "usuario": 4,
+        "fecha": "2026-02-12T13:39:24.324",
+        "total": "233.29",
+        "estado": "ENV",
+        "direccion_envio": "658 Hampton Rapid\nNorth Kayla, DC 44575"
+    }
+},
+{
+    "model": "tienda.pedido",
+    "pk": 10,
+    "fields": {
+        "usuario": 5,
+        "fecha": "2026-02-12T13:39:24.335",
+        "total": "337.44",
+        "estado": "PEND",
+        "direccion_envio": "158 Ibarra Divide\nLake Mark, IL 60568"
+    }
+},
+{
+    "model": "tienda.pedido",
+    "pk": 11,
+    "fields": {
+        "usuario": 5,
+        "fecha": "2026-02-12T13:39:24.344",
+        "total": "599.64",
+        "estado": "ENT",
+        "direccion_envio": "083 Andre Fort\nValdezton, DC 60205"
+    }
+},
+{
+    "model": "tienda.pedido",
+    "pk": 12,
+    "fields": {
+        "usuario": 5,
+        "fecha": "2026-02-12T13:39:24.355",
+        "total": "788.01",
+        "estado": "PEND",
+        "direccion_envio": "4791 Kim Squares Suite 446\nHeatherview, MT 79342"
+    }
+},
+{
+    "model": "tienda.pedido",
+    "pk": 13,
+    "fields": {
+        "usuario": 6,
+        "fecha": "2026-02-12T13:39:24.370",
+        "total": "61.47",
+        "estado": "PROC",
+        "direccion_envio": "715 Candice Unions\nTanyafurt, WI 94274"
+    }
+},
+{
+    "model": "tienda.pedido",
+    "pk": 14,
+    "fields": {
+        "usuario": 6,
+        "fecha": "2026-02-12T13:39:24.378",
+        "total": "843.45",
+        "estado": "ENV",
+        "direccion_envio": "0625 Michele Flat Suite 547\nSouth Brandonstad, TN 48099"
+    }
+},
+{
+    "model": "tienda.pedido",
+    "pk": 15,
+    "fields": {
+        "usuario": 7,
+        "fecha": "2026-02-12T13:39:24.393",
+        "total": "227.33",
+        "estado": "ENT",
+        "direccion_envio": "579 Richard Unions\nJennifershire, GA 34049"
+    }
+},
+{
+    "model": "tienda.pedido",
+    "pk": 16,
+    "fields": {
+        "usuario": 7,
+        "fecha": "2026-02-12T13:39:24.402",
+        "total": "169.33",
+        "estado": "PROC",
+        "direccion_envio": "854 Alexis Ville Apt. 380\nWatsonburgh, ID 59951"
+    }
+},
+{
+    "model": "tienda.pedido",
+    "pk": 17,
+    "fields": {
+        "usuario": 8,
+        "fecha": "2026-02-12T13:39:24.413",
+        "total": "1097.19",
+        "estado": "ENV",
+        "direccion_envio": "2103 Patel Falls Suite 431\nDavidbury, ME 14427"
+    }
+},
+{
+    "model": "tienda.pedido",
+    "pk": 18,
+    "fields": {
+        "usuario": 8,
+        "fecha": "2026-02-12T13:39:24.428",
+        "total": "288.16",
+        "estado": "ENT",
+        "direccion_envio": "0907 Smith Hill Apt. 542\nWest David, NV 70426"
+    }
+},
+{
+    "model": "tienda.pedido",
+    "pk": 19,
+    "fields": {
+        "usuario": 8,
+        "fecha": "2026-02-12T13:39:24.441",
+        "total": "130.06",
+        "estado": "PEND",
+        "direccion_envio": "169 Lang Port\nSouth Rebeccaside, DE 31646"
+    }
+},
+{
+    "model": "tienda.pedido",
+    "pk": 20,
+    "fields": {
+        "usuario": 9,
+        "fecha": "2026-02-12T13:39:24.448",
+        "total": "384.01",
+        "estado": "ENT",
+        "direccion_envio": "1688 Clinton Key Suite 440\nLisahaven, IA 04555"
+    }
+},
+{
+    "model": "tienda.pedido",
+    "pk": 21,
+    "fields": {
+        "usuario": 9,
+        "fecha": "2026-02-12T13:39:24.462",
+        "total": "666.88",
+        "estado": "PROC",
+        "direccion_envio": "7736 Shelley Mountains\nNicholsonview, MO 87099"
+    }
+},
+{
+    "model": "tienda.pedido",
+    "pk": 22,
+    "fields": {
+        "usuario": 9,
+        "fecha": "2026-02-12T13:39:24.475",
+        "total": "700.70",
+        "estado": "ENT",
+        "direccion_envio": "5633 Dennis Rest\nPort Sharon, OK 07980"
+    }
+},
+{
+    "model": "tienda.pedido",
+    "pk": 23,
+    "fields": {
+        "usuario": 10,
+        "fecha": "2026-02-12T13:39:24.487",
+        "total": "458.40",
+        "estado": "ENT",
+        "direccion_envio": "79844 Cynthia Trail\nPort Janiceshire, ND 88720"
+    }
+},
+{
+    "model": "tienda.detalle_pedido",
+    "pk": 1,
+    "fields": {
+        "pedido": 1,
+        "prenda": 15,
+        "fecha_agregado": "2026-02-12T13:39:24.218",
+        "fecha_entrega": null,
+        "cantidad": 3,
+        "precio": "148.43"
+    }
+},
+{
+    "model": "tienda.detalle_pedido",
+    "pk": 2,
+    "fields": {
+        "pedido": 1,
+        "prenda": 6,
+        "fecha_agregado": "2026-02-12T13:39:24.220",
+        "fecha_entrega": null,
+        "cantidad": 2,
+        "precio": "49.03"
+    }
+},
+{
+    "model": "tienda.detalle_pedido",
+    "pk": 3,
+    "fields": {
+        "pedido": 1,
+        "prenda": 4,
+        "fecha_agregado": "2026-02-12T13:39:24.224",
+        "fecha_entrega": null,
+        "cantidad": 2,
+        "precio": "60.32"
+    }
+},
+{
+    "model": "tienda.detalle_pedido",
+    "pk": 4,
+    "fields": {
+        "pedido": 2,
+        "prenda": 17,
+        "fecha_agregado": "2026-02-12T13:39:24.232",
+        "fecha_entrega": null,
+        "cantidad": 3,
+        "precio": "130.18"
+    }
+},
+{
+    "model": "tienda.detalle_pedido",
+    "pk": 5,
+    "fields": {
+        "pedido": 2,
+        "prenda": 4,
+        "fecha_agregado": "2026-02-12T13:39:24.236",
+        "fecha_entrega": null,
+        "cantidad": 3,
+        "precio": "60.32"
+    }
+},
+{
+    "model": "tienda.detalle_pedido",
+    "pk": 6,
+    "fields": {
+        "pedido": 2,
+        "prenda": 1,
+        "fecha_agregado": "2026-02-12T13:39:24.239",
+        "fecha_entrega": null,
+        "cantidad": 2,
+        "precio": "24.19"
+    }
+},
+{
+    "model": "tienda.detalle_pedido",
+    "pk": 7,
+    "fields": {
+        "pedido": 3,
+        "prenda": 16,
+        "fecha_agregado": "2026-02-12T13:39:24.246",
+        "fecha_entrega": null,
+        "cantidad": 1,
+        "precio": "148.50"
+    }
+},
+{
+    "model": "tienda.detalle_pedido",
+    "pk": 8,
+    "fields": {
+        "pedido": 3,
+        "prenda": 15,
+        "fecha_agregado": "2026-02-12T13:39:24.249",
+        "fecha_entrega": null,
+        "cantidad": 1,
+        "precio": "148.43"
+    }
+},
+{
+    "model": "tienda.detalle_pedido",
+    "pk": 9,
+    "fields": {
+        "pedido": 3,
+        "prenda": 6,
+        "fecha_agregado": "2026-02-12T13:39:24.252",
+        "fecha_entrega": null,
+        "cantidad": 2,
+        "precio": "49.03"
+    }
+},
+{
+    "model": "tienda.detalle_pedido",
+    "pk": 10,
+    "fields": {
+        "pedido": 3,
+        "prenda": 12,
+        "fecha_agregado": "2026-02-12T13:39:24.254",
+        "fecha_entrega": null,
+        "cantidad": 1,
+        "precio": "31.86"
+    }
+},
+{
+    "model": "tienda.detalle_pedido",
+    "pk": 11,
+    "fields": {
+        "pedido": 4,
+        "prenda": 1,
+        "fecha_agregado": "2026-02-12T13:39:24.261",
+        "fecha_entrega": null,
+        "cantidad": 3,
+        "precio": "24.19"
+    }
+},
+{
+    "model": "tienda.detalle_pedido",
+    "pk": 12,
+    "fields": {
+        "pedido": 4,
+        "prenda": 3,
+        "fecha_agregado": "2026-02-12T13:39:24.264",
+        "fecha_entrega": null,
+        "cantidad": 1,
+        "precio": "149.34"
+    }
+},
+{
+    "model": "tienda.detalle_pedido",
+    "pk": 13,
+    "fields": {
+        "pedido": 4,
+        "prenda": 8,
+        "fecha_agregado": "2026-02-12T13:39:24.267",
+        "fecha_entrega": null,
+        "cantidad": 3,
+        "precio": "36.35"
+    }
+},
+{
+    "model": "tienda.detalle_pedido",
+    "pk": 14,
+    "fields": {
+        "pedido": 4,
+        "prenda": 10,
+        "fecha_agregado": "2026-02-12T13:39:24.270",
+        "fecha_entrega": null,
+        "cantidad": 1,
+        "precio": "145.14"
+    }
+},
+{
+    "model": "tienda.detalle_pedido",
+    "pk": 15,
+    "fields": {
+        "pedido": 5,
+        "prenda": 15,
+        "fecha_agregado": "2026-02-12T13:39:24.277",
+        "fecha_entrega": null,
+        "cantidad": 3,
+        "precio": "148.43"
+    }
+},
+{
+    "model": "tienda.detalle_pedido",
+    "pk": 16,
+    "fields": {
+        "pedido": 5,
+        "prenda": 20,
+        "fecha_agregado": "2026-02-12T13:39:24.280",
+        "fecha_entrega": null,
+        "cantidad": 2,
+        "precio": "73.39"
+    }
+},
+{
+    "model": "tienda.detalle_pedido",
+    "pk": 17,
+    "fields": {
+        "pedido": 5,
+        "prenda": 10,
+        "fecha_agregado": "2026-02-12T13:39:24.283",
+        "fecha_entrega": null,
+        "cantidad": 1,
+        "precio": "145.14"
+    }
+},
+{
+    "model": "tienda.detalle_pedido",
+    "pk": 18,
+    "fields": {
+        "pedido": 6,
+        "prenda": 2,
+        "fecha_agregado": "2026-02-12T13:39:24.291",
+        "fecha_entrega": null,
+        "cantidad": 1,
+        "precio": "40.54"
+    }
+},
+{
+    "model": "tienda.detalle_pedido",
+    "pk": 19,
+    "fields": {
+        "pedido": 7,
+        "prenda": 9,
+        "fecha_agregado": "2026-02-12T13:39:24.299",
+        "fecha_entrega": null,
+        "cantidad": 2,
+        "precio": "78.83"
+    }
+},
+{
+    "model": "tienda.detalle_pedido",
+    "pk": 20,
+    "fields": {
+        "pedido": 7,
+        "prenda": 3,
+        "fecha_agregado": "2026-02-12T13:39:24.301",
+        "fecha_entrega": null,
+        "cantidad": 3,
+        "precio": "149.34"
+    }
+},
+{
+    "model": "tienda.detalle_pedido",
+    "pk": 21,
+    "fields": {
+        "pedido": 7,
+        "prenda": 2,
+        "fecha_agregado": "2026-02-12T13:39:24.303",
+        "fecha_entrega": null,
+        "cantidad": 3,
+        "precio": "40.54"
+    }
+},
+{
+    "model": "tienda.detalle_pedido",
+    "pk": 22,
+    "fields": {
+        "pedido": 7,
+        "prenda": 20,
+        "fecha_agregado": "2026-02-12T13:39:24.306",
+        "fecha_entrega": null,
+        "cantidad": 3,
+        "precio": "73.39"
+    }
+},
+{
+    "model": "tienda.detalle_pedido",
+    "pk": 23,
+    "fields": {
+        "pedido": 8,
+        "prenda": 20,
+        "fecha_agregado": "2026-02-12T13:39:24.315",
+        "fecha_entrega": null,
+        "cantidad": 2,
+        "precio": "73.39"
+    }
+},
+{
+    "model": "tienda.detalle_pedido",
+    "pk": 24,
+    "fields": {
+        "pedido": 8,
+        "prenda": 7,
+        "fecha_agregado": "2026-02-12T13:39:24.317",
+        "fecha_entrega": null,
+        "cantidad": 1,
+        "precio": "38.96"
+    }
+},
+{
+    "model": "tienda.detalle_pedido",
+    "pk": 25,
+    "fields": {
+        "pedido": 8,
+        "prenda": 6,
+        "fecha_agregado": "2026-02-12T13:39:24.320",
+        "fecha_entrega": null,
+        "cantidad": 1,
+        "precio": "49.03"
+    }
+},
+{
+    "model": "tienda.detalle_pedido",
+    "pk": 26,
+    "fields": {
+        "pedido": 9,
+        "prenda": 1,
+        "fecha_agregado": "2026-02-12T13:39:24.326",
+        "fecha_entrega": null,
+        "cantidad": 1,
+        "precio": "24.19"
+    }
+},
+{
+    "model": "tienda.detalle_pedido",
+    "pk": 27,
+    "fields": {
+        "pedido": 9,
+        "prenda": 13,
+        "fecha_agregado": "2026-02-12T13:39:24.329",
+        "fecha_entrega": null,
+        "cantidad": 3,
+        "precio": "69.70"
+    }
+},
+{
+    "model": "tienda.detalle_pedido",
+    "pk": 28,
+    "fields": {
+        "pedido": 10,
+        "prenda": 5,
+        "fecha_agregado": "2026-02-12T13:39:24.337",
+        "fecha_entrega": null,
+        "cantidad": 2,
+        "precio": "103.63"
+    }
+},
+{
+    "model": "tienda.detalle_pedido",
+    "pk": 29,
+    "fields": {
+        "pedido": 10,
+        "prenda": 17,
+        "fecha_agregado": "2026-02-12T13:39:24.339",
+        "fecha_entrega": null,
+        "cantidad": 1,
+        "precio": "130.18"
+    }
+},
+{
+    "model": "tienda.detalle_pedido",
+    "pk": 30,
+    "fields": {
+        "pedido": 11,
+        "prenda": 13,
+        "fecha_agregado": "2026-02-12T13:39:24.346",
+        "fecha_entrega": null,
+        "cantidad": 3,
+        "precio": "69.70"
+    }
+},
+{
+    "model": "tienda.detalle_pedido",
+    "pk": 31,
+    "fields": {
+        "pedido": 11,
+        "prenda": 17,
+        "fecha_agregado": "2026-02-12T13:39:24.349",
+        "fecha_entrega": null,
+        "cantidad": 3,
+        "precio": "130.18"
+    }
+},
+{
+    "model": "tienda.detalle_pedido",
+    "pk": 32,
+    "fields": {
+        "pedido": 12,
+        "prenda": 12,
+        "fecha_agregado": "2026-02-12T13:39:24.357",
+        "fecha_entrega": null,
+        "cantidad": 3,
+        "precio": "31.86"
+    }
+},
+{
+    "model": "tienda.detalle_pedido",
+    "pk": 33,
+    "fields": {
+        "pedido": 12,
+        "prenda": 13,
+        "fecha_agregado": "2026-02-12T13:39:24.359",
+        "fecha_entrega": null,
+        "cantidad": 3,
+        "precio": "69.70"
+    }
+},
+{
+    "model": "tienda.detalle_pedido",
+    "pk": 34,
+    "fields": {
+        "pedido": 12,
+        "prenda": 1,
+        "fecha_agregado": "2026-02-12T13:39:24.362",
+        "fecha_entrega": null,
+        "cantidad": 3,
+        "precio": "24.19"
+    }
+},
+{
+    "model": "tienda.detalle_pedido",
+    "pk": 35,
+    "fields": {
+        "pedido": 12,
+        "prenda": 19,
+        "fecha_agregado": "2026-02-12T13:39:24.364",
+        "fecha_entrega": null,
+        "cantidad": 3,
+        "precio": "136.92"
+    }
+},
+{
+    "model": "tienda.detalle_pedido",
+    "pk": 36,
+    "fields": {
+        "pedido": 13,
+        "prenda": 14,
+        "fecha_agregado": "2026-02-12T13:39:24.373",
+        "fecha_entrega": null,
+        "cantidad": 3,
+        "precio": "20.49"
+    }
+},
+{
+    "model": "tienda.detalle_pedido",
+    "pk": 37,
+    "fields": {
+        "pedido": 14,
+        "prenda": 17,
+        "fecha_agregado": "2026-02-12T13:39:24.380",
+        "fecha_entrega": null,
+        "cantidad": 2,
+        "precio": "130.18"
+    }
+},
+{
+    "model": "tienda.detalle_pedido",
+    "pk": 38,
+    "fields": {
+        "pedido": 14,
+        "prenda": 16,
+        "fecha_agregado": "2026-02-12T13:39:24.382",
+        "fecha_entrega": null,
+        "cantidad": 2,
+        "precio": "148.50"
+    }
+},
+{
+    "model": "tienda.detalle_pedido",
+    "pk": 39,
+    "fields": {
+        "pedido": 14,
+        "prenda": 5,
+        "fecha_agregado": "2026-02-12T13:39:24.385",
+        "fecha_entrega": null,
+        "cantidad": 2,
+        "precio": "103.63"
+    }
+},
+{
+    "model": "tienda.detalle_pedido",
+    "pk": 40,
+    "fields": {
+        "pedido": 14,
+        "prenda": 9,
+        "fecha_agregado": "2026-02-12T13:39:24.387",
+        "fecha_entrega": null,
+        "cantidad": 1,
+        "precio": "78.83"
+    }
+},
+{
+    "model": "tienda.detalle_pedido",
+    "pk": 41,
+    "fields": {
+        "pedido": 15,
+        "prenda": 9,
+        "fecha_agregado": "2026-02-12T13:39:24.395",
+        "fecha_entrega": null,
+        "cantidad": 1,
+        "precio": "78.83"
+    }
+},
+{
+    "model": "tienda.detalle_pedido",
+    "pk": 42,
+    "fields": {
+        "pedido": 15,
+        "prenda": 16,
+        "fecha_agregado": "2026-02-12T13:39:24.398",
+        "fecha_entrega": null,
+        "cantidad": 1,
+        "precio": "148.50"
+    }
+},
+{
+    "model": "tienda.detalle_pedido",
+    "pk": 43,
+    "fields": {
+        "pedido": 16,
+        "prenda": 1,
+        "fecha_agregado": "2026-02-12T13:39:24.405",
+        "fecha_entrega": null,
+        "cantidad": 1,
+        "precio": "24.19"
+    }
+},
+{
+    "model": "tienda.detalle_pedido",
+    "pk": 44,
+    "fields": {
+        "pedido": 16,
+        "prenda": 10,
+        "fecha_agregado": "2026-02-12T13:39:24.407",
+        "fecha_entrega": null,
+        "cantidad": 1,
+        "precio": "145.14"
+    }
+},
+{
+    "model": "tienda.detalle_pedido",
+    "pk": 45,
+    "fields": {
+        "pedido": 17,
+        "prenda": 15,
+        "fecha_agregado": "2026-02-12T13:39:24.415",
+        "fecha_entrega": null,
+        "cantidad": 3,
+        "precio": "148.43"
+    }
+},
+{
+    "model": "tienda.detalle_pedido",
+    "pk": 46,
+    "fields": {
+        "pedido": 17,
+        "prenda": 20,
+        "fecha_agregado": "2026-02-12T13:39:24.418",
+        "fecha_entrega": null,
+        "cantidad": 2,
+        "precio": "73.39"
+    }
+},
+{
+    "model": "tienda.detalle_pedido",
+    "pk": 47,
+    "fields": {
+        "pedido": 17,
+        "prenda": 13,
+        "fecha_agregado": "2026-02-12T13:39:24.420",
+        "fecha_entrega": null,
+        "cantidad": 1,
+        "precio": "69.70"
+    }
+},
+{
+    "model": "tienda.detalle_pedido",
+    "pk": 48,
+    "fields": {
+        "pedido": 17,
+        "prenda": 10,
+        "fecha_agregado": "2026-02-12T13:39:24.422",
+        "fecha_entrega": null,
+        "cantidad": 3,
+        "precio": "145.14"
+    }
+},
+{
+    "model": "tienda.detalle_pedido",
+    "pk": 49,
+    "fields": {
+        "pedido": 18,
+        "prenda": 18,
+        "fecha_agregado": "2026-02-12T13:39:24.431",
+        "fecha_entrega": null,
+        "cantidad": 1,
+        "precio": "98.68"
+    }
+},
+{
+    "model": "tienda.detalle_pedido",
+    "pk": 50,
+    "fields": {
+        "pedido": 18,
+        "prenda": 16,
+        "fecha_agregado": "2026-02-12T13:39:24.434",
+        "fecha_entrega": null,
+        "cantidad": 1,
+        "precio": "148.50"
+    }
+},
+{
+    "model": "tienda.detalle_pedido",
+    "pk": 51,
+    "fields": {
+        "pedido": 18,
+        "prenda": 14,
+        "fecha_agregado": "2026-02-12T13:39:24.436",
+        "fecha_entrega": null,
+        "cantidad": 2,
+        "precio": "20.49"
+    }
+},
+{
+    "model": "tienda.detalle_pedido",
+    "pk": 52,
+    "fields": {
+        "pedido": 19,
+        "prenda": 11,
+        "fecha_agregado": "2026-02-12T13:39:24.443",
+        "fecha_entrega": null,
+        "cantidad": 2,
+        "precio": "65.03"
+    }
+},
+{
+    "model": "tienda.detalle_pedido",
+    "pk": 53,
+    "fields": {
+        "pedido": 20,
+        "prenda": 11,
+        "fecha_agregado": "2026-02-12T13:39:24.451",
+        "fecha_entrega": null,
+        "cantidad": 1,
+        "precio": "65.03"
+    }
+},
+{
+    "model": "tienda.detalle_pedido",
+    "pk": 54,
+    "fields": {
+        "pedido": 20,
+        "prenda": 2,
+        "fecha_agregado": "2026-02-12T13:39:24.454",
+        "fecha_entrega": null,
+        "cantidad": 3,
+        "precio": "40.54"
+    }
+},
+{
+    "model": "tienda.detalle_pedido",
+    "pk": 55,
+    "fields": {
+        "pedido": 20,
+        "prenda": 18,
+        "fecha_agregado": "2026-02-12T13:39:24.456",
+        "fecha_entrega": null,
+        "cantidad": 2,
+        "precio": "98.68"
+    }
+},
+{
+    "model": "tienda.detalle_pedido",
+    "pk": 56,
+    "fields": {
+        "pedido": 21,
+        "prenda": 12,
+        "fecha_agregado": "2026-02-12T13:39:24.464",
+        "fecha_entrega": null,
+        "cantidad": 2,
+        "precio": "31.86"
+    }
+},
+{
+    "model": "tienda.detalle_pedido",
+    "pk": 57,
+    "fields": {
+        "pedido": 21,
+        "prenda": 16,
+        "fecha_agregado": "2026-02-12T13:39:24.467",
+        "fecha_entrega": null,
+        "cantidad": 3,
+        "precio": "148.50"
+    }
+},
+{
+    "model": "tienda.detalle_pedido",
+    "pk": 58,
+    "fields": {
+        "pedido": 21,
+        "prenda": 9,
+        "fecha_agregado": "2026-02-12T13:39:24.469",
+        "fecha_entrega": null,
+        "cantidad": 2,
+        "precio": "78.83"
+    }
+},
+{
+    "model": "tienda.detalle_pedido",
+    "pk": 59,
+    "fields": {
+        "pedido": 22,
+        "prenda": 4,
+        "fecha_agregado": "2026-02-12T13:39:24.477",
+        "fecha_entrega": null,
+        "cantidad": 1,
+        "precio": "60.32"
+    }
+},
+{
+    "model": "tienda.detalle_pedido",
+    "pk": 60,
+    "fields": {
+        "pedido": 22,
+        "prenda": 11,
+        "fecha_agregado": "2026-02-12T13:39:24.480",
+        "fecha_entrega": null,
+        "cantidad": 3,
+        "precio": "65.03"
+    }
+},
+{
+    "model": "tienda.detalle_pedido",
+    "pk": 61,
+    "fields": {
+        "pedido": 22,
+        "prenda": 15,
+        "fecha_agregado": "2026-02-12T13:39:24.482",
+        "fecha_entrega": null,
+        "cantidad": 3,
+        "precio": "148.43"
+    }
+},
+{
+    "model": "tienda.detalle_pedido",
+    "pk": 62,
+    "fields": {
+        "pedido": 23,
+        "prenda": 3,
+        "fecha_agregado": "2026-02-12T13:39:24.490",
+        "fecha_entrega": null,
+        "cantidad": 1,
+        "precio": "149.34"
+    }
+},
+{
+    "model": "tienda.detalle_pedido",
+    "pk": 63,
+    "fields": {
+        "pedido": 23,
+        "prenda": 9,
+        "fecha_agregado": "2026-02-12T13:39:24.493",
+        "fecha_entrega": null,
+        "cantidad": 3,
+        "precio": "78.83"
+    }
+},
+{
+    "model": "tienda.detalle_pedido",
+    "pk": 64,
+    "fields": {
+        "pedido": 23,
+        "prenda": 1,
+        "fecha_agregado": "2026-02-12T13:39:24.496",
+        "fecha_entrega": null,
+        "cantidad": 3,
+        "precio": "24.19"
+    }
+},
+{
+    "model": "tienda.opinion",
+    "pk": 1,
+    "fields": {
+        "usuario": 4,
+        "clasificacion": 2,
+        "comentario": "Article air heart TV nice leader. Simply there on own theory cause. Spend ever international study space.",
+        "fecha": "2026-02-12",
+        "recomendado": false
+    }
+},
+{
+    "model": "tienda.opinion",
+    "pk": 2,
+    "fields": {
+        "usuario": 1,
+        "clasificacion": 1,
+        "comentario": "Set fire bar nation her not amount. Woman laugh line election something work. Total involve cover group forward candidate financial.",
+        "fecha": "2026-02-12",
+        "recomendado": true
+    }
+},
+{
+    "model": "tienda.opinion",
+    "pk": 3,
+    "fields": {
+        "usuario": 4,
+        "clasificacion": 4,
+        "comentario": "Financial visit season should should recent force. Yeah give no happen owner responsibility parent.",
+        "fecha": "2026-02-12",
+        "recomendado": false
+    }
+},
+{
+    "model": "tienda.opinion",
+    "pk": 4,
+    "fields": {
+        "usuario": 6,
+        "clasificacion": 2,
+        "comentario": "Head student clearly interesting. Sea keep bill individual rock pattern.\nForce under audience military. Government air cover former leg back.",
+        "fecha": "2026-02-12",
+        "recomendado": false
+    }
+},
+{
+    "model": "tienda.opinion",
+    "pk": 5,
+    "fields": {
+        "usuario": 4,
+        "clasificacion": 4,
+        "comentario": "Interest occur between impact range purpose. Citizen state economic air science follow foot. Commercial culture husband drug design turn suddenly.",
+        "fecha": "2026-02-12",
+        "recomendado": false
+    }
+},
+{
+    "model": "tienda.opinion",
+    "pk": 6,
+    "fields": {
+        "usuario": 1,
+        "clasificacion": 4,
+        "comentario": "Evidence affect bed property two. Color item race indicate action. Hand last whether natural listen successful head.",
+        "fecha": "2026-02-12",
+        "recomendado": false
+    }
+},
+{
+    "model": "tienda.opinion",
+    "pk": 7,
+    "fields": {
+        "usuario": 5,
+        "clasificacion": 2,
+        "comentario": "Sign forward include section. I interest Democrat purpose. Region in heavy situation. Public eight light view television too.",
+        "fecha": "2026-02-12",
+        "recomendado": false
+    }
+},
+{
+    "model": "tienda.opinion",
+    "pk": 8,
+    "fields": {
+        "usuario": 6,
+        "clasificacion": 1,
+        "comentario": "Save outside cost begin never. Skin specific say night benefit rich almost.\nScientist game Congress star administration coach.",
+        "fecha": "2026-02-12",
+        "recomendado": true
+    }
+},
+{
+    "model": "tienda.opinion",
+    "pk": 9,
+    "fields": {
+        "usuario": 9,
+        "clasificacion": 2,
+        "comentario": "Decide beat maintain ability. Pick should Mrs kitchen.",
+        "fecha": "2026-02-12",
+        "recomendado": true
+    }
+},
+{
+    "model": "tienda.opinion",
+    "pk": 10,
+    "fields": {
+        "usuario": 4,
+        "clasificacion": 1,
+        "comentario": "Really when ten usually office positive side.",
+        "fecha": "2026-02-12",
+        "recomendado": false
+    }
+},
+{
+    "model": "tienda.opinion",
+    "pk": 11,
+    "fields": {
+        "usuario": 9,
+        "clasificacion": 4,
+        "comentario": "Fund those realize apply seem role painting. Follow however air church live. Race option fund anyone scene.",
+        "fecha": "2026-02-12",
+        "recomendado": false
+    }
+},
+{
+    "model": "tienda.opinion",
+    "pk": 12,
+    "fields": {
+        "usuario": 3,
+        "clasificacion": 5,
+        "comentario": "Really people thousand market ago fight various learn. Along Mrs science all age. Identify whatever music buy carry.",
+        "fecha": "2026-02-12",
+        "recomendado": true
+    }
+},
+{
+    "model": "tienda.opinion",
+    "pk": 13,
+    "fields": {
+        "usuario": 4,
+        "clasificacion": 3,
+        "comentario": "Job push meeting skill vote. Kitchen once situation.",
+        "fecha": "2026-02-12",
+        "recomendado": false
+    }
+},
+{
+    "model": "tienda.opinion",
+    "pk": 14,
+    "fields": {
+        "usuario": 8,
+        "clasificacion": 1,
+        "comentario": "Husband instead cell money. Fish find enter. Improve could speech put production continue police.",
+        "fecha": "2026-02-12",
+        "recomendado": false
+    }
+},
+{
+    "model": "tienda.opinion",
+    "pk": 15,
+    "fields": {
+        "usuario": 2,
+        "clasificacion": 2,
+        "comentario": "Article baby image us herself series yes. World budget soldier benefit physical success sometimes beautiful. Trade series ago adult concern.",
+        "fecha": "2026-02-12",
+        "recomendado": false
+    }
+},
+{
+    "model": "tienda.opinion",
+    "pk": 16,
+    "fields": {
+        "usuario": 5,
+        "clasificacion": 5,
+        "comentario": "Feel concern chair safe here skill. Move pattern watch away.",
+        "fecha": "2026-02-12",
+        "recomendado": true
+    }
+},
+{
+    "model": "tienda.opinion",
+    "pk": 17,
+    "fields": {
+        "usuario": 6,
+        "clasificacion": 4,
+        "comentario": "Leave seek between put wrong weight unit. Bring cut character choose itself event its. Rock others get area as music on.",
+        "fecha": "2026-02-12",
+        "recomendado": true
+    }
+},
+{
+    "model": "tienda.opinion",
+    "pk": 18,
+    "fields": {
+        "usuario": 7,
+        "clasificacion": 3,
+        "comentario": "Cause and value site base tell call.\nAction world situation turn step different performance. Knowledge become sign across six commercial.",
+        "fecha": "2026-02-12",
+        "recomendado": true
+    }
+},
+{
+    "model": "tienda.opinion",
+    "pk": 19,
+    "fields": {
+        "usuario": 7,
+        "clasificacion": 3,
+        "comentario": "Lead community voice. Market nation answer treatment sit. Almost want network attorney Mrs.",
+        "fecha": "2026-02-12",
+        "recomendado": true
+    }
+},
+{
+    "model": "tienda.opinion",
+    "pk": 20,
+    "fields": {
+        "usuario": 1,
+        "clasificacion": 5,
+        "comentario": "Small significant level game always rate evidence. Audience reach forget. Economy painting thing music suggest such.",
+        "fecha": "2026-02-12",
+        "recomendado": false
+    }
+}
+]
