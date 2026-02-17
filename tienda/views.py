@@ -13,7 +13,22 @@ def listar_perfiles(request):
 
     #SQL
     #perfiles = Perfil_Usuario.objects.raw("SELECT * FROM Tienda_Perfil_Usuario p" 
-    #                                     +" JOIN Tienda_Usuario u ON u.id = p.usuario_id")
+    #                                   +" JOIN Tienda_Usuario u ON u.id = p.usuario_id")
 
     return render(request, 'tienda/listar_perfiles.html', {'perfiles': perfiles})
+
+#Vista que muestra todas las cestas ordenadas por objetos_en_cesta
+
+def listar_cestas(request):
+    cestas = (Cesta.objects.select_related("usuario").prefetch_related("prendas")).order_by("objetos_en_cesta")
+
+    #SQL
+    #cestas = Cesta.objects.raw("""
+    #   SELECT *
+    #   FROM Tienda_Cesta c
+    #   JOIN Tienda_Usuario u ON u.id = c.usuario_id
+    #   ORDER BY c.objetos_en_cesta
+    #""")
+
+    return render(request, 'tienda/listar_cestas.html', {'cestas': cestas})
 
