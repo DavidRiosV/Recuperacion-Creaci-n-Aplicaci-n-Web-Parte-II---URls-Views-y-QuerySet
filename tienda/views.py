@@ -1,6 +1,6 @@
 from django.shortcuts import render
 from tienda.models import Usuario,Perfil_Usuario,Marca,Descuento,Prenda,Inventario,Pedido,Opinion,Detalle_Pedido,Cesta
-# Create your views here.
+from django.db.models import Q
 
 #Menu de inicio
 def index(request):
@@ -32,3 +32,18 @@ def listar_cestas(request):
 
     return render(request, 'tienda/listar_cestas.html', {'cestas': cestas})
 
+#Vista que muestra todas las opiniones cuya valoracion sea 5 y lo recomiendan.
+
+def listar_opiniones (request):
+    opiniones = Opinion.objects.select_related("usuario")
+    opiniones = opiniones.filter(clasificacion=5, recomendado=True)
+
+    #SQL
+    #opiniones = Opinion.objects.raw("""
+    #   SELECT *
+    #   FROM Tienda_Opinion o
+    #   JOIN Tienda_Usuario u ON u.id = o.usuario_id
+    #   WHERE o.clasificacion=5 AND o.recomendado=TRUE
+    #""")
+
+    return render(request, 'tienda/listar_opiniones.html', {'opiniones': opiniones})
