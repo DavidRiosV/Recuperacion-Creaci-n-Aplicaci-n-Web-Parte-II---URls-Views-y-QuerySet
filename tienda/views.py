@@ -47,3 +47,17 @@ def listar_opiniones (request):
     #""")
 
     return render(request, 'tienda/listar_opiniones.html', {'opiniones': opiniones})
+
+#Vista que se le pase un entero que sera el porcentaje y debe de cumplir que solo muestre los que tengan ese % o mas y que activo sea true
+
+def listar_descuentos (request):
+    descuentos = Descuento.objects.prefetch_related("prenda_set").filter(Q(porcentaje=11.00) | Q(porcentaje=44.00))
+    #SQL
+    #opiniones = Opinion.objects.raw("""
+    #   SELECT *
+    #   FROM Tienda_Opinion o
+    #   JOIN Tienda_Usuario u ON u.id = o.usuario_id
+    #   WHERE o.clasificacion=5 AND o.recomendado=TRUE
+    #""")
+
+    return render(request, 'tienda/listar_descuentos.html', {'descuentos': descuentos})

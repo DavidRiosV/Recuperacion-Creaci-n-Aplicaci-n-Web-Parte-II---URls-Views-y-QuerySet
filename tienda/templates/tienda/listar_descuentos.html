@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Descuentos</title>
+    
+    <style>
+        /* Reset básico */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f5f5f5;
+            color: #333;
+            margin: 0;
+            padding: 20px;
+        }
+
+        /* Título principal */
+        h1 {
+            text-align: center;
+            color: #2c3e50;
+            margin-bottom: 30px;
+        }
+
+        /* Lista de descuentos */
+        ul {
+            list-style-type: none;
+            padding: 0;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        /* Cada descuento */
+        ul li {
+            background-color: #ffffff;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            padding: 15px 20px;
+            margin-bottom: 15px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            transition: transform 0.2s;
+        }
+
+        /* Efecto hover */
+        ul li:hover {
+            transform: translateY(-3px);
+        }
+
+        /* Etiquetas en negrita */
+        strong {
+            color: #34495e;
+        }
+
+        /* Enlace volver al menú */
+        a {
+            display: inline-block;
+            margin-top: 20px;
+            text-decoration: none;
+            color: #ffffff;
+            background-color: #3498db;
+            padding: 10px 15px;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+
+        a:hover {
+            background-color: #2980b9;
+        }
+    </style>
+</head>
+<body>
+    <h1>Lista de descuentos</h1>
+
+    <ul>
+        {% for d in descuentos %}
+        <li>
+            <strong>Código:</strong> {{ d.codigo }} <br>
+            <strong>Porcentaje:</strong> {{ d.porcentaje }} <br>
+            <strong>Activo:</strong> {{ d.activo }} <br>
+            <strong>Fecha expiración:</strong> {{ d.fecha_expiracion }} <br>
+            <strong>Prendas:</strong>
+            {% for prenda in d.prenda_set.all %}
+                {{ prenda.nombre }}{% if not forloop.last %}, {% endif %}
+            {% empty %}
+                No hay prendas con este descuento.
+            {% endfor %}
+        </li>
+        {% empty %}
+        <li>No hay descuentos registrados.</li>
+        {% endfor %}
+    </ul>
+
+    <br>
+    <a href="{% url 'index' %}">Volver al menú</a>
+</body>
+</html>
