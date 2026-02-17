@@ -3,12 +3,65 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Menu</title>
+    <title>Menú Principal</title>
+
+    <style>
+        /* Estilos básicos */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f2f5;
+            margin: 0;
+            padding: 0;
+        }
+
+        h1 {
+            text-align: center;
+            color: #2c3e50;
+            padding: 30px 0;
+        }
+
+        /* Contenedor central */
+        .menu-container {
+            max-width: 600px;
+            margin: 0 auto;
+            text-align: center;
+        }
+
+        /* Lista de enlaces */
+        ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        ul li {
+            margin: 15px 0;
+        }
+
+        /* Botones de enlace */
+        ul li a {
+            display: inline-block;
+            text-decoration: none;
+            background-color: #3498db;
+            color: white;
+            padding: 12px 25px;
+            border-radius: 6px;
+            transition: background-color 0.3s, transform 0.2s;
+            font-weight: bold;
+        }
+
+        /* Efecto hover */
+        ul li a:hover {
+            background-color: #2980b9;
+            transform: translateY(-3px);
+        }
+    </style>
 </head>
 <body>
-    <h1>Lista de enlaces</h1>
-    <ul>
-        <li><a href="{%url 'listar_usuarios' %}"> Usuarios</a></li>
-    </ul>
+    <h1>Menú Principal</h1>
+    <div class="menu-container">
+        <ul>
+            <li><a href="{% url 'listar_perfiles' %}">Lista de Perfiles</a></li>
+        </ul>
+    </div>
 </body>
 </html>
