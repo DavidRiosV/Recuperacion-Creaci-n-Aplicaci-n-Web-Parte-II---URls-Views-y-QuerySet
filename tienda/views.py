@@ -78,3 +78,13 @@ def listar_descuentos(request):
     #   LIMIT 1;
     #""")
     return render(request, 'tienda/listar_descuentos.html', {'descuentos': descuentos})
+
+#Vista que muestra las prendas que no tienen descuentos.
+
+def listar_prendas(request):
+   prendas = Prenda.objects.select_related("marca","inventario").prefetch_related("descuentos","cesta_set","pedido_set","detalle_pedido_set").filter(descuentos__isnull=True)
+
+   #SQL
+   #Necesito ayuda de Jorge
+  
+   return render(request, 'tienda/listar_prendas.html', {'prendas': prendas})
