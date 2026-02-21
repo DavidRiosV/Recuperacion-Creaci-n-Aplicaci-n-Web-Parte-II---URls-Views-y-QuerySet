@@ -62,3 +62,23 @@ def listar_inventarios (request,cant,ubi):
     #""", [cant, ubi])
 
     return render(request, 'tienda/listar_inventarios.html', {'inventarios': inventarios})
+
+def listar_prendas(request):
+    prendas = Prenda.objects.select_related("marca","inventario").prefetch_related("descuentos","cesta_set","pedido_set","detalle_pedido_set").order_by("-precio")[:1].all()
+
+    #SQL
+    #prendas = Prenda.objects.raw("""
+    #    SELECT *
+    #    FROM Tienda_Prenda p
+    #    JOIN Tienda_Marca m ON p.marca_id = m.id
+    #    LEFT JOIN Tienda_Inventario i ON i.prenda_id = p.id
+    #    LEFT JOIN Tienda_Prenda_descuentos pd ON pd.prenda_id = p.id
+    #    LEFT JOIN Tienda_Descuento d ON d.id = pd.descuento_id
+    #    LEFT JOIN Tienda_Cesta_prendas cp ON cp.prenda_id = p.id
+    #    LEFT JOIN Tienda_Cesta c ON c.id = cp.cesta_id
+    #    LEFT JOIN Tienda_Detalle_Pedido dp ON dp.prenda_id = p.id
+    #    LEFT JOIN Tienda_Pedido pe ON pe.id = dp.pedido_id
+    #    ORDER BY p.precio DESC LIMIT 1;
+    #""")
+    
+    return render(request, 'tienda/listar_prendas.html', {'prendas': prendas})

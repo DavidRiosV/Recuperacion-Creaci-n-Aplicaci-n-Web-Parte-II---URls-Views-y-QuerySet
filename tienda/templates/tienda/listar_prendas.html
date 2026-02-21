@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prendas</title>
+    
+    <style>
+        /* Reset básico */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f5f5f5;
+            color: #333;
+            margin: 0;
+            padding: 20px;
+        }
+
+        /* Título principal */
+        h1 {
+            text-align: center;
+            color: #2c3e50;
+            margin-bottom: 30px;
+        }
+
+        /* Lista de descuentos */
+        ul {
+            list-style-type: none;
+            padding: 0;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        /* Cada descuento */
+        ul li {
+            background-color: #ffffff;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            padding: 15px 20px;
+            margin-bottom: 15px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            transition: transform 0.2s;
+        }
+
+        /* Efecto hover */
+        ul li:hover {
+            transform: translateY(-3px);
+        }
+
+        /* Etiquetas en negrita */
+        strong {
+            color: #34495e;
+        }
+
+        /* Enlace volver al menú */
+        a {
+            display: inline-block;
+            margin-top: 20px;
+            text-decoration: none;
+            color: #ffffff;
+            background-color: #3498db;
+            padding: 10px 15px;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+
+        a:hover {
+            background-color: #2980b9;
+        }
+    </style>
+</head>
+<body>
+    <h1>Lista de Prendas</h1>
+
+    <ul>
+        {% for p in prendas %}
+<li>
+    <strong>Nombre:</strong> {{ p.nombre }} <br>
+    <strong>Descripcion:</strong> {{ p.descripcion }} <br>
+    <strong>Precio:</strong> {{ p.precio }} <br>
+    <strong>Talla:</strong> {{ p.talla }} <br>
+    <br>
+    <strong>Marca:</strong> {{ p.marca.nombre }} <br>
+
+    <strong>Descuentos:</strong> 
+    {% for d in p.descuentos.all %}
+        {{ d.codigo }} ({{ d.porcentaje }}%) {% if not forloop.last %}, {% endif %}
+    {% empty %}
+        No hay descuentos.
+    {% endfor %}
+    <br>
+
+    <strong>Inventario:</strong>
+    {% if p.inventario %}
+        Cantidad disponible: {{ p.inventario.cantidad_disponible }}
+    {% else %}
+        No hay inventario.
+    {% endif %}
+    <br>
+
+    <strong>Cestas:</strong>
+    {% for cesta in p.cesta_set.all %}
+        {{ cesta.id }}{% if not forloop.last %}, {% endif %}
+    {% empty %}
+        No hay cestas con esa prenda.
+    {% endfor %}
+    <br>
+
+    <strong>Pedidos:</strong>
+    {% for pedido in p.pedido_set.all %}
+        {{ pedido.id }}{% if not forloop.last %}, {% endif %}
+    {% empty %}
+        No hay pedidos con esa prenda.
+    {% endfor %}
+    <br>
+
+    <strong>Detalles de pedido:</strong>
+    {% for detalle in p.detalle_pedido_set.all %}
+        {{ detalle.id }}{% if not forloop.last %}, {% endif %}
+    {% empty %}
+        No hay detalles de pedidos con esa prenda.
+    {% endfor %}
+    <br>
+
+</li>
+
+        {% empty %}
+        <li>No hay prendas registrados.</li>
+        {% endfor %}
+    </ul>
+
+    <br>
+    <a href="{% url 'index' %}">Volver al menú</a>
+</body>
+</html>
