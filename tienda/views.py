@@ -112,6 +112,8 @@ def listar_detalles_pedidos(request):
 
     return render(request, 'tienda/listar_detalle_pedidos.html', {'dpedido':dpedido,'media': media,"maximo":maximo,"minimo":minimo})
 
+# Vista que muestra todos los usuarios
+
 def listar_usuarios(request):
     usuarios = Usuario.objects.select_related("perfil_usuario","cesta").prefetch_related("pedido_set","opinion_set").distinct()
 
