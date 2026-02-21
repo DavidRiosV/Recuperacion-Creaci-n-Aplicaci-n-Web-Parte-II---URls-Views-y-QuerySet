@@ -1,6 +1,6 @@
 from django.shortcuts import render
 from tienda.models import Usuario,Perfil_Usuario,Marca,Descuento,Prenda,Inventario,Pedido,Opinion,Detalle_Pedido,Cesta
-from django.db.models import Q,Avg,Max,Min
+from django.db.models import Q,Avg,Max,Min,Prefetch
 
 # Menu de inicio
 def index(request):
@@ -111,3 +111,18 @@ def listar_detalles_pedidos(request):
     # Preguntar a Jorge por esta consulta
 
     return render(request, 'tienda/listar_detalle_pedidos.html', {'dpedido':dpedido,'media': media,"maximo":maximo,"minimo":minimo})
+
+def listar_usuarios(request):
+    usuarios = Usuario.objects.select_related("perfil_usuario","cesta").prefetch_related("pedido_set","opinion_set").distinct()
+
+    #SQL
+    #usuarios = Usuario.objects.raw("""
+    #    SELECT DISTINCT u.*
+    #    FROM Tienda_Usuario u
+    #    LEFT JOIN Tienda_Perfil_Usuario pu ON pu.usuario_id = u.id
+    #    LEFT JOIN Tienda_Cesta c ON c.usuario_id = u.id
+    #    LEFT JOIN Tienda_Pedido p ON p.usuario_id = u.id
+    #    LEFT JOIN Tienda_Opinion o ON o.usuario_id = u.id
+    #""")
+
+    return render(request, 'tienda/listar_usuarios.html', {'usuarios': usuarios})

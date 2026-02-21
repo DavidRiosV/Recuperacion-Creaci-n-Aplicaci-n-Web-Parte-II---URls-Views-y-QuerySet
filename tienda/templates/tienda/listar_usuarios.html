@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Usuarios</title>
+    
+    <style>
+        /* Reset básico */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f5f5f5;
+            color: #333;
+            margin: 0;
+            padding: 20px;
+        }
+
+        /* Título principal */
+        h1 {
+            text-align: center;
+            color: #2c3e50;
+            margin-bottom: 30px;
+        }
+
+        /* Lista de perfiles */
+        ul {
+            list-style-type: none;
+            padding: 0;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        /* Cada perfil */
+        ul li {
+            background-color: #ffffff;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            padding: 15px 20px;
+            margin-bottom: 15px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            transition: transform 0.2s;
+        }
+
+        /* Efecto hover */
+        ul li:hover {
+            transform: translateY(-3px);
+        }
+
+        /* Etiquetas en negrita */
+        strong {
+            color: #34495e;
+        }
+
+        /* Enlace volver al menú */
+        a {
+            display: inline-block;
+            margin-top: 20px;
+            text-decoration: none;
+            color: #ffffff;
+            background-color: #3498db;
+            padding: 10px 15px;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+
+        a:hover {
+            background-color: #2980b9;
+        }
+    </style>
+</head>
+<body>
+    <h1>Lista de usuarios</h1>
+
+    <ul>
+    {% for u in usuarios %}
+        <li>
+            <strong>Nombre:</strong> {{ u.nombre }} <br>
+            <strong>correo_electronico:</strong> {{ u.correo_electronico }} <br>
+            <strong>contraseña:</strong> {{ u.contraseña }} <br>
+            <strong>fecha_registro:</strong> {{ u.fecha_registro }} <br>
+            <br>
+            <strong>Perfil de usuario:</strong> {{ u.perfil_usuario.nombre_usuario }} <br>
+            <strong>Cesta:</strong> {{ u.cesta.id }} <br>
+            
+            <strong>Pedidos:</strong> 
+             {% for pedidos in u.pedido_set.all %}
+                {{ pedidos.id }}
+            {% empty %}
+                Este usuario no tiene pedidos.
+            {% endfor %}
+            <br>
+
+            <strong>Opiniones:</strong> 
+             {% for opinion in u.opinion_set.all %}
+                {{ opinion.clasificacion }}
+            {% empty %}
+                Este usuario no tiene opiniones.
+            {% endfor %}
+            <br>
+
+        </li>
+
+    {% empty %}
+        <li>No hay usuarios registrados.</li>
+    {% endfor %}
+    </ul>
+
+    <br>
+    <a href="{% url 'index' %}">Volver al menú</a>
+</body>
+</html>
