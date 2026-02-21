@@ -1,12 +1,12 @@
 from django.shortcuts import render
 from tienda.models import Usuario,Perfil_Usuario,Marca,Descuento,Prenda,Inventario,Pedido,Opinion,Detalle_Pedido,Cesta
-from django.db.models import Q
+from django.db.models import Q,Avg,Max,Min
 
-#Menu de inicio
+# Menu de inicio
 def index(request):
     return render(request, 'tienda/index.html')
 
-#Vista que muestra todos los perfiles de los usuarios
+# Vista que muestra todos los perfiles de los usuarios
 
 def listar_perfiles(request):
     perfiles = (Perfil_Usuario.objects.select_related("usuario").all())
@@ -17,7 +17,7 @@ def listar_perfiles(request):
 
     return render(request, 'tienda/listar_perfiles.html', {'perfiles': perfiles})
 
-#Vista que muestra todas las cestas ordenadas por objetos_en_cesta
+# Vista que muestra todas las cestas ordenadas por objetos_en_cesta
 
 def listar_cestas(request):
     cestas = (Cesta.objects.select_related("usuario").prefetch_related("prendas")).order_by("objetos_en_cesta")
@@ -32,7 +32,7 @@ def listar_cestas(request):
 
     return render(request, 'tienda/listar_cestas.html', {'cestas': cestas})
 
-#Vista que muestra todas las opiniones cuya valoracion sea 5 y lo recomiendan.
+# Vista que muestra todas las opiniones cuya valoracion sea 5 y lo recomiendan.
 
 def listar_opiniones (request):
     opiniones = Opinion.objects.select_related("usuario")
@@ -48,7 +48,7 @@ def listar_opiniones (request):
 
     return render(request, 'tienda/listar_opiniones.html', {'opiniones': opiniones})
 
-#Vista que se le pase un entero que sera el porcentaje y debe de cumplir que solo muestre los que tengan ese % o la ubicacion es la pasada.
+# Vista que se le pase un entero que sera el porcentaje y debe de cumplir que solo muestre los que tengan ese % o la ubicacion es la pasada.
 
 def listar_inventarios (request,cant,ubi):
     inventarios = Inventario.objects.select_related("prenda").filter(Q(cantidad_disponible=cant)|Q(ubicacion_almacen=ubi))
@@ -63,7 +63,7 @@ def listar_inventarios (request,cant,ubi):
 
     return render(request, 'tienda/listar_inventarios.html', {'inventarios': inventarios})
 
-#Vista que ordena los descuentos por porcentaje y muestra el que mayor porcentaje tiene.
+# Vista que ordena los descuentos por porcentaje y muestra el que mayor porcentaje tiene.
 
 def listar_descuentos(request):
     descuentos = Descuento.objects.prefetch_related("prenda_set").order_by("-porcentaje")[:1]
@@ -79,7 +79,7 @@ def listar_descuentos(request):
     #""")
     return render(request, 'tienda/listar_descuentos.html', {'descuentos': descuentos})
 
-#Vista que muestra las prendas que no tienen descuentos.
+# Vista que muestra las prendas que no tienen descuentos.
 
 def listar_prendas(request):
    prendas = Prenda.objects.select_related("marca","inventario").prefetch_related("descuentos","cesta_set","pedido_set","detalle_pedido_set").filter(descuentos__isnull=True)
@@ -88,3 +88,26 @@ def listar_prendas(request):
    #Necesito ayuda de Jorge
   
    return render(request, 'tienda/listar_prendas.html', {'prendas': prendas})
+
+# Vista que muestra el precio total de todos los pedidos con agregate
+
+def listar_detalles_pedidos(request):
+    dpedido = Detalle_Pedido.objects.select_related("pedido","prenda").all()
+    resultado = dpedido.aggregate(Avg("precio"),Max("precio"),Min("precio"))
+    media = resultado["precio__avg"]
+    maximo = resultado["precio__max"]
+    minimo = resultado["precio__min"]
+
+    #SQL
+    #dpedido = Detalle_Pedido.objects.raw("""
+    #   SELECT *
+    #    AVG(dp.precio) AS media
+    #    MAX(dp.precio) AS maximo
+    #    MIN (dp.precio) AS minimo
+    #   FROM Tienda_Detalle_Pedido dp
+    #   JOIN Tienda_Pedido pe ON pe.id= dp.pedido_id
+    #   JOIN Tienda_Prenda pr ON pr.id= dp.prenda_id
+    #""")
+    # Preguntar a Jorge por esta consulta
+
+    return render(request, 'tienda/listar_detalle_pedidos.html', {'dpedido':dpedido,'media': media,"maximo":maximo,"minimo":minimo})
