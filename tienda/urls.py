@@ -1,4 +1,4 @@
-from django.urls import path
+from django.urls import path,re_path
 from . import views
 
 urlpatterns = [
@@ -7,5 +7,5 @@ urlpatterns = [
     path('cesta/listar', views.listar_cestas,name='listar_cestas'),
     path('opinion/listar', views.listar_opiniones,name='listar_opiniones'),
     path('inventario/listar/<int:cant>/<str:ubi>/', views.listar_inventarios, name='listar_inventarios'),
-    path('prendas/listar', views.listar_prendas,name='listar_prendas'),
+    path('descuentos/listar', views.listar_descuentos,name='listar_descuentos'),
 ]

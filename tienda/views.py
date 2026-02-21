@@ -48,7 +48,7 @@ def listar_opiniones (request):
 
     return render(request, 'tienda/listar_opiniones.html', {'opiniones': opiniones})
 
-#Vista que se le pase un entero que sera el porcentaje y debe de cumplir que solo muestre los que tengan ese % o 
+#Vista que se le pase un entero que sera el porcentaje y debe de cumplir que solo muestre los que tengan ese % o la ubicacion es la pasada.
 
 def listar_inventarios (request,cant,ubi):
     inventarios = Inventario.objects.select_related("prenda").filter(Q(cantidad_disponible=cant)|Q(ubicacion_almacen=ubi))
@@ -63,22 +63,18 @@ def listar_inventarios (request,cant,ubi):
 
     return render(request, 'tienda/listar_inventarios.html', {'inventarios': inventarios})
 
-def listar_prendas(request):
-    prendas = Prenda.objects.select_related("marca","inventario").prefetch_related("descuentos","cesta_set","pedido_set","detalle_pedido_set").order_by("-precio")[:1].all()
+#Vista que ordena los descuentos por porcentaje y muestra el que mayor porcentaje tiene.
 
-    #SQL
-    #prendas = Prenda.objects.raw("""
-    #    SELECT *
-    #    FROM Tienda_Prenda p
-    #    JOIN Tienda_Marca m ON p.marca_id = m.id
-    #    LEFT JOIN Tienda_Inventario i ON i.prenda_id = p.id
-    #    LEFT JOIN Tienda_Prenda_descuentos pd ON pd.prenda_id = p.id
-    #    LEFT JOIN Tienda_Descuento d ON d.id = pd.descuento_id
-    #    LEFT JOIN Tienda_Cesta_prendas cp ON cp.prenda_id = p.id
-    #    LEFT JOIN Tienda_Cesta c ON c.id = cp.cesta_id
-    #    LEFT JOIN Tienda_Detalle_Pedido dp ON dp.prenda_id = p.id
-    #    LEFT JOIN Tienda_Pedido pe ON pe.id = dp.pedido_id
-    #    ORDER BY p.precio DESC LIMIT 1;
+def listar_descuentos(request):
+    descuentos = Descuento.objects.prefetch_related("prenda_set").order_by("-porcentaje")[:1]
+
+    # SQL
+    #descuentos = Descuento.objects.raw("""
+    #   SELECT *
+    #   FROM Tienda_Descuento d
+    #   JOIN Tienda_Prenda_descuentos pd ON pd.descuento_id = d.id
+    #   JOIN Tienda_Prenda p ON p.id = pd.prenda_id
+    #   ORDER BY d.porcentaje DESC
+    #   LIMIT 1;
     #""")
-    
-    return render(request, 'tienda/listar_prendas.html', {'prendas': prendas})
+    return render(request, 'tienda/listar_descuentos.html', {'descuentos': descuentos})

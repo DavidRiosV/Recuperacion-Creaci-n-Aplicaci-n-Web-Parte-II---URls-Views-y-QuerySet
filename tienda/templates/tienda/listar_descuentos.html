@@ -78,12 +78,14 @@
             <strong>Porcentaje:</strong> {{ d.porcentaje }} <br>
             <strong>Activo:</strong> {{ d.activo }} <br>
             <strong>Fecha expiración:</strong> {{ d.fecha_expiracion }} <br>
+
             <strong>Prendas:</strong>
             {% for prenda in d.prenda_set.all %}
                 {{ prenda.nombre }}{% if not forloop.last %}, {% endif %}
             {% empty %}
                 No hay prendas con este descuento.
             {% endfor %}
+            
         </li>
         {% empty %}
         <li>No hay descuentos registrados.</li>
