@@ -48,16 +48,17 @@ def listar_opiniones (request):
 
     return render(request, 'tienda/listar_opiniones.html', {'opiniones': opiniones})
 
-#Vista que se le pase un entero que sera el porcentaje y debe de cumplir que solo muestre los que tengan ese % o mas y que activo sea true
+#Vista que se le pase un entero que sera el porcentaje y debe de cumplir que solo muestre los que tengan ese % o 
 
-def listar_descuentos (request):
-    descuentos = Descuento.objects.prefetch_related("prenda_set").filter(Q(porcentaje=11.00) | Q(porcentaje=44.00))
+def listar_inventarios (request,cant,ubi):
+    inventarios = Inventario.objects.select_related("prenda").filter(Q(cantidad_disponible=cant)|Q(ubicacion_almacen=ubi))
+
     #SQL
-    #opiniones = Opinion.objects.raw("""
-    #   SELECT *
-    #   FROM Tienda_Opinion o
-    #   JOIN Tienda_Usuario u ON u.id = o.usuario_id
-    #   WHERE o.clasificacion=5 AND o.recomendado=TRUE
-    #""")
+    #inventarios = Inventario.objects.raw("""
+    #    SELECT i.*
+    #    FROM Tienda_Inventario i
+    #    JOIN Tienda_Prenda p ON p.id = i.prenda_id
+    #    WHERE i.cantidad_disponible = %s OR i.ubicacion_almacen = %s
+    #""", [cant, ubi])
 
-    return render(request, 'tienda/listar_descuentos.html', {'descuentos': descuentos})
+    return render(request, 'tienda/listar_inventarios.html', {'inventarios': inventarios})
