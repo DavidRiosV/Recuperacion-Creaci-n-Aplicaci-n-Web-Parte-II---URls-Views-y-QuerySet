@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Marcas</title>
+    
+    <style>
+        /* Reset básico */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f5f5f5;
+            color: #333;
+            margin: 0;
+            padding: 20px;
+        }
+
+        /* Título principal */
+        h1 {
+            text-align: center;
+            color: #2c3e50;
+            margin-bottom: 30px;
+        }
+
+        /* Lista de perfiles */
+        ul {
+            list-style-type: none;
+            padding: 0;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        /* Cada perfil */
+        ul li {
+            background-color: #ffffff;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            padding: 15px 20px;
+            margin-bottom: 15px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            transition: transform 0.2s;
+        }
+
+        /* Efecto hover */
+        ul li:hover {
+            transform: translateY(-3px);
+        }
+
+        /* Etiquetas en negrita */
+        strong {
+            color: #34495e;
+        }
+
+        /* Enlace volver al menú */
+        a {
+            display: inline-block;
+            margin-top: 20px;
+            text-decoration: none;
+            color: #ffffff;
+            background-color: #3498db;
+            padding: 10px 15px;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+
+        a:hover {
+            background-color: #2980b9;
+        }
+    </style>
+</head>
+<body>
+    <h1>Lista de marcas</h1>
+
+    <ul>
+    {% for m in marcas %}
+        <li>
+            <strong>Nombre:</strong> {{ m.nombre }} <br>
+            <strong>pais_origen:</strong> {{ m.pais_origen }} <br>
+            <strong>descripcion:</strong> {{ m.descripcion }} <br>
+            <strong>año_fundacion:</strong> {{ m.año_fundacion }} <br>
+            <br>
+
+            <strong>Prenda:</strong> 
+             {% for prenda in m.prenda_set.all %}
+                {{ prenda.nombre }}
+            {% empty %}
+                Esta marca no tiene prendas.
+            {% endfor %}
+            <br>
+
+        </li>
+
+    {% empty %}
+        <li>No hay marcas registradas.</li>
+    {% endfor %}
+    </ul>
+
+    <br>
+    <a href="{% url 'index' %}">Volver al menú</a>
+</body>
+</html>

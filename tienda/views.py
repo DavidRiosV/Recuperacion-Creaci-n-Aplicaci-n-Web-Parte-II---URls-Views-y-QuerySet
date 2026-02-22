@@ -129,3 +129,18 @@ def listar_usuarios(request,id):
     #""", [id])
 
     return render(request, 'tienda/listar_usuarios.html', {'usuarios': usuarios})
+
+# Vista que muestra una marca segun el nombre.
+
+def listar_marcas(request,nombre):
+    marcas = Marca.objects.prefetch_related("prenda_set").filter(nombre=nombre)
+
+    #SQL
+    #marcas = Marca.objects.raw("""
+    #    SELECT *
+    #    FROM Tienda_Marca m
+    #    LEFT JOIN Tienda_Prenda p ON p.marca_id = m.id
+    #    WHERE m.nombre=%s
+    #""", [nombre])
+
+    return render(request, 'tienda/listar_marcas.html', {'marcas': marcas})
