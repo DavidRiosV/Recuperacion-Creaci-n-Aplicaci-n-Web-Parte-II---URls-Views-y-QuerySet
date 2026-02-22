@@ -144,3 +144,19 @@ def listar_marcas(request,nombre):
     #""", [nombre])
 
     return render(request, 'tienda/listar_marcas.html', {'marcas': marcas})
+
+#Vista que usa re_path en la url (no funciona).
+
+def listar_pedidos(request):
+    #Preguntar a Jorge
+    pedidos = Pedido.objects.select_related("usuario").prefetch_related("detalle_pedido_set").all()
+
+    #SQL
+    #marcas = Marca.objects.raw("""
+    #    SELECT *
+    #    FROM Tienda_Marca m
+    #    LEFT JOIN Tienda_Prenda p ON p.marca_id = m.id
+    #    WHERE m.nombre=%s
+    #""", [nombre])
+
+    return render(request, 'tienda/listar_pedidos.html', {'pedidos': pedidos})
