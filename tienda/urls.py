@@ -12,7 +12,5 @@ urlpatterns = [
     path('detalles_pedidos/listar', views.listar_detalles_pedidos,name='listar_detalles_pedidos'),
     path('usuarios/listar/<int:id>/', views.listar_usuarios,name='listar_usuarios'),
     path('marcas/listar/<str:nombre>/', views.listar_marcas,name='listar_marcas'),
-    path('pedidos/listar/', views.listar_pedidos,name='listar_pedidos'),
+    re_path(r'^pedidos/total/(?P<total>[0-9]+(\.[0-9]+)?)/$', views.listar_pedidos, name='listar_pedidos'),
 ]
-
-#re_path(r'^pedidos/total/(?P<total>[0-9]+(\.[0-9]+)?)/$', views.listar_pedidos, name='listar_pedidos'),

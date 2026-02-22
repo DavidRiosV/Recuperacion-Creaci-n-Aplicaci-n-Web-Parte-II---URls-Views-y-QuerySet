@@ -147,16 +147,18 @@ def listar_marcas(request,nombre):
 
 #Vista que usa re_path en la url (no funciona).
 
-def listar_pedidos(request):
-    #Preguntar a Jorge
-    pedidos = Pedido.objects.select_related("usuario").prefetch_related("detalle_pedido_set").all()
-
+def listar_pedidos(request,total):
+    #Preguntar a Jorge ya que lo del Prefetch y query set son copiado y no se bien que hace.
+    pedidos = Pedido.objects.select_related("usuario").prefetch_related(Prefetch("detalle_pedido_set",queryset=Detalle_Pedido.objects.select_related("prenda"))).filter(total=total)
+    
     #SQL
-    #marcas = Marca.objects.raw("""
-    #    SELECT *
-    #    FROM Tienda_Marca m
-    #    LEFT JOIN Tienda_Prenda p ON p.marca_id = m.id
-    #    WHERE m.nombre=%s
-    #""", [nombre])
+    #pedidos = Pedido.objects.raw("""
+    #    SELECT DISTINCT pe.*
+    #    FROM Tienda_Pedido pe
+    #    JOIN Tienda_Usuario u ON u.id = pe.usuario_id
+    #    LEFT JOIN Tienda_Detalle_Pedido dp ON dp.pedido_id = pe.id
+    #    LEFT JOIN Tienda_Prenda pr ON pr.id = dp.prenda_id
+    #    WHERE pe.total = %s
+    #""", [total])
 
     return render(request, 'tienda/listar_pedidos.html', {'pedidos': pedidos})

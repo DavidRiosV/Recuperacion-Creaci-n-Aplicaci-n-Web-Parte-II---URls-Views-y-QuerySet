@@ -80,7 +80,14 @@
             <strong>Direccion de envio:</strong> {{ p.direccion_envio }} <br>
             <br>
             <strong>Usuario:</strong> {{ p.usuario.nombre }} <br>
-            <strong>Prendas:</strong> {{ p.prendas.nombre }} <br>
+
+            <strong>Prendas:</strong>
+            {% for detalle in p.detalle_pedido_set.all %}
+                {{ detalle.prenda.nombre }}
+            {% empty %}
+                Esta pedido no tiene prendas.
+            {% endfor %}
+            <br>
 
             <strong>Detalle pedidos precios:</strong> 
              {% for pedido in p.detalle_pedido_set.all %}
@@ -89,7 +96,6 @@
                 Esta pedido no tiene detalles.
             {% endfor %}
             <br>
-
         </li>
 
     {% empty %}
