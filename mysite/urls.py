@@ -21,3 +21,8 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('',include('tienda.urls'))
 ]
+
+handler400 = 'tienda.views.mi_error_400'
+handler403 = 'tienda.views.mi_error_403'
+handler404 = 'tienda.views.mi_error_404'
+handler500 = 'tienda.views.mi_error_500'
