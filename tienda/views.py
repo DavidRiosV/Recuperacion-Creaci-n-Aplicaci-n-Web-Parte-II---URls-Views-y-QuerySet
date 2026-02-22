@@ -112,10 +112,10 @@ def listar_detalles_pedidos(request):
 
     return render(request, 'tienda/listar_detalle_pedidos.html', {'dpedido':dpedido,'media': media,"maximo":maximo,"minimo":minimo})
 
-# Vista que muestra todos los usuarios
+# Vista que muestra un usuario segun el id.
 
-def listar_usuarios(request):
-    usuarios = Usuario.objects.select_related("perfil_usuario","cesta").prefetch_related("pedido_set","opinion_set").distinct()
+def listar_usuarios(request,id):
+    usuarios = Usuario.objects.select_related("perfil_usuario","cesta").prefetch_related("pedido_set","opinion_set").filter(id=id)
 
     #SQL
     #usuarios = Usuario.objects.raw("""
@@ -125,6 +125,7 @@ def listar_usuarios(request):
     #    LEFT JOIN Tienda_Cesta c ON c.usuario_id = u.id
     #    LEFT JOIN Tienda_Pedido p ON p.usuario_id = u.id
     #    LEFT JOIN Tienda_Opinion o ON o.usuario_id = u.id
-    #""")
+    #    WHERE u.id=%s
+    #""", [id])
 
     return render(request, 'tienda/listar_usuarios.html', {'usuarios': usuarios})
