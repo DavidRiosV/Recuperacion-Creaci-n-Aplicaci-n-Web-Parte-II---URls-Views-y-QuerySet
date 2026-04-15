@@ -20,7 +20,7 @@ def listar_perfiles(request):
 # Vista que muestra todas las cestas ordenadas por objetos_en_cesta
 
 def listar_cestas(request):
-    cestas = (Cesta.objects.select_related("usuario").prefetch_related("prendas")).order_by("objetos_en_cesta")
+    cestas = Cesta.objects.select_related("usuario").prefetch_related("prendas").order_by("objetos_en_cesta")
 
     #SQL
     #cestas = Cesta.objects.raw("""
