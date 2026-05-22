@@ -1,10 +1,8 @@
 #!/bin/sh
-'''exec' "/home/david/Recuperacion Jorge/Recuperaci-n-Aplicaci-n-Web-Parte-I--Inicio-y-Modelos/myvenv/bin/python" "$0" "$@"
+'''exec' "/home/david/DAW 2/Jorge/Recuperacion Jorge/Recuperacion-Creaci-n-Aplicaci-n-Web-Parte-II---URls-Views-y-QuerySet/myvenv/bin/python" "$0" "$@"
 ' '''
-# -*- coding: utf-8 -*-
-import re
 import sys
 from pip._internal.cli.main import main
 if __name__ == '__main__':
-    sys.argv[0] = re.sub(r'(-script\.pyw|\.exe)?$', '', sys.argv[0])
+    sys.argv[0] = sys.argv[0].removesuffix('.exe')
     sys.exit(main())
